@@ -166,6 +166,12 @@ importers:
 
   .:
     devDependencies:
+      '@tsconfig/node-ts':
+        specifier: 23.6.4
+        version: 23.6.4
+      '@tsconfig/strictest':
+        specifier: 2.0.8
+        version: 2.0.8
       '@types/node':
         specifier: 24.13.4
         version: 24.13.4
@@ -598,6 +604,12 @@ packages:
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
+
+  '@tsconfig/node-ts@23.6.4':
+    resolution: {integrity: sha512-37BMJvNQZ+vTgd1xG2TGBkJ6ENeT4eO4Wh2CHrnn0IwH7ybLFCzh4Uc//kc7UIvqiRac4uGdIc1meKOjMSlKzw==}
+
+  '@tsconfig/strictest@2.0.8':
+    resolution: {integrity: sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==}
 
   '@types/aria-query@5.0.4':
     resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
@@ -1610,6 +1622,10 @@ snapshots:
   '@testing-library/user-event@14.6.7(@testing-library/dom@10.4.1)':
     dependencies:
       '@testing-library/dom': 10.4.1
+
+  '@tsconfig/node-ts@23.6.4': {}
+
+  '@tsconfig/strictest@2.0.8': {}
 
   '@types/aria-query@5.0.4': {}
 

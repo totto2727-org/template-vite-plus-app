@@ -19,25 +19,29 @@ Hello, world!
 ## Key features
 
 - Prints a greeting without configuration or network access.
-- Runs as a single executable without a separately installed Bun or Node.js runtime.
+- Runs as a native executable without a separately installed Bun or Node.js runtime.
+- Offers a portable npm CLI powered by Bun.
 - Provides Nix package and overlay outputs.
 
 ## Prerequisites
 
 - **Platform**: macOS on Apple Silicon, or Linux on ARM64 or x86-64.
-- **Nix**: Enable `nix-command` and `flakes` for the installation methods below.
+- **Nix installation**: Enable `nix-command` and `flakes`. The native executable needs no separate Bun or Node.js runtime.
+- **npm installation**: Install Node.js 24 or later with npm for `npm`/`npx`, and install Bun on PATH to run the portable CLI.
 
 ## Setup
 
 ### Run without installing
 
 ```bash
+npx @username/project
 nix run github:username/project
 ```
 
 ### Install
 
 ```bash
+npm install --global @username/project
 nix profile add github:username/project
 ```
 

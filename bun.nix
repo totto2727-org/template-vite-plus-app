@@ -378,6 +378,16 @@
     hash = "sha512-MPCpX8bxe8zS+JmmTwLp8jd0dy1rAm60Te/SL8JrQM3qvQJcBOs1d7IefJMyZzqM3EWBrDn/LWDt1BCGu4ASfg==";
     name = "user-event-14.6.7.tgz";
   };
+  "@tsconfig/node-ts@23.6.4" = fetchurl {
+    url = "https://npm.flatt.tech/@tsconfig/node-ts/-/node-ts-23.6.4.tgz";
+    hash = "sha512-37BMJvNQZ+vTgd1xG2TGBkJ6ENeT4eO4Wh2CHrnn0IwH7ybLFCzh4Uc//kc7UIvqiRac4uGdIc1meKOjMSlKzw==";
+    name = "node-ts-23.6.4.tgz";
+  };
+  "@tsconfig/strictest@2.0.8" = fetchurl {
+    url = "https://npm.flatt.tech/@tsconfig/strictest/-/strictest-2.0.8.tgz";
+    hash = "sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==";
+    name = "strictest-2.0.8.tgz";
+  };
   "@types/aria-query@5.0.4" = fetchurl {
     url = "https://npm.flatt.tech/@types/aria-query/-/aria-query-5.0.4.tgz";
     hash = "sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==";

@@ -5,6 +5,8 @@
     "": {
       "name": "template-vite-plus-app",
       "devDependencies": {
+        "@tsconfig/node-ts": "23.6.4",
+        "@tsconfig/strictest": "2.0.8",
         "@types/node": "24.13.4",
         "typescript": "7.0.2",
         "vite-plus": "0.3.0",
@@ -155,6 +157,10 @@
     "@testing-library/dom": ["@testing-library/dom@10.4.1", "https://npm.flatt.tech/@testing-library/dom/-/dom-10.4.1.tgz", { "dependencies": { "@babel/code-frame": "^7.10.4", "@babel/runtime": "^7.12.5", "@types/aria-query": "^5.0.1", "aria-query": "5.3.0", "dom-accessibility-api": "^0.5.9", "lz-string": "^1.5.0", "picocolors": "1.1.1", "pretty-format": "^27.0.2" } }, "sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg=="],
 
     "@testing-library/user-event": ["@testing-library/user-event@14.6.7", "https://npm.flatt.tech/@testing-library/user-event/-/user-event-14.6.7.tgz", { "peerDependencies": { "@testing-library/dom": ">=7.21.4" } }, "sha512-MPCpX8bxe8zS+JmmTwLp8jd0dy1rAm60Te/SL8JrQM3qvQJcBOs1d7IefJMyZzqM3EWBrDn/LWDt1BCGu4ASfg=="],
+
+    "@tsconfig/node-ts": ["@tsconfig/node-ts@23.6.4", "https://npm.flatt.tech/@tsconfig/node-ts/-/node-ts-23.6.4.tgz", {}, "sha512-37BMJvNQZ+vTgd1xG2TGBkJ6ENeT4eO4Wh2CHrnn0IwH7ybLFCzh4Uc//kc7UIvqiRac4uGdIc1meKOjMSlKzw=="],
+
+    "@tsconfig/strictest": ["@tsconfig/strictest@2.0.8", "https://npm.flatt.tech/@tsconfig/strictest/-/strictest-2.0.8.tgz", {}, "sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw=="],
 
     "@types/aria-query": ["@types/aria-query@5.0.4", "https://npm.flatt.tech/@types/aria-query/-/aria-query-5.0.4.tgz", {}, "sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw=="],
 

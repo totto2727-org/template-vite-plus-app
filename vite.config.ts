@@ -17,20 +17,29 @@ export default defineConfig({
   },
   lint: { options: { typeAware: true, typeCheck: true } },
   test: { include: ['src/**/*.test.ts'] },
+  pack: { entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
   run: {
     tasks: {
       build: {
         command: 'bun build --compile src/main.ts --outfile build/project',
-        cache: false,
+        input: [{ auto: true }, '!build/**'],
+        output: ['build/**'],
       },
+      check: 'vp check',
       ci: {
-        command: 'vp check && vp test run && vp run build',
-        cache: false,
+        command: '',
+        dependsOn: ['check', 'test', 'build', 'npm:check'],
       },
-      fix: {
-        command: 'vp check --fix',
-        cache: false,
+      fix: 'vp check --fix',
+      'npm:check': {
+        command: 'npm pack --dry-run',
+        dependsOn: ['pack'],
       },
+      pack: {
+        command: 'vp pack',
+        output: ['dist/**'],
+      },
+      test: 'vp test run',
     },
   },
 })
