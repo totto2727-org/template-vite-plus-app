@@ -1,0 +1,35 @@
+{
+  "name": "template-vite-plus-app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A simple Bun command-line application with Vite+ tooling",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totto2727-org/template-vite-plus-app.git"
+  },
+  "bin": {
+    "project": "dist/main.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "bin": "bun run src/main.ts"
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "23.6.4",
+    "@tsconfig/strictest": "2.0.8",
+    "@types/node": "24.13.4",
+    "typescript": "7.0.2",
+    "vite-plus": "0.3.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.4.1"
+}

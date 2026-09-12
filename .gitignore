@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.vite/
+.vite-plus/
+.DS_Store
+.env
+.env.*
+!.env.example
+tmp/
+.direnv/
+result
+result-*
