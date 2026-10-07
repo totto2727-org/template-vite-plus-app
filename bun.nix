@@ -1024,8 +1024,9 @@
     name = "vitest-5.0.3.tgz";
   };
   "why-is-node-running@3.2.1" = fetchurl {
-    url = "https://registry.npmjs.org/why-is-node-running/-/why-is-node-running-3.2.1.tgz";
+    url = "https://npm.flatt.tech/why-is-node-running/-/why-is-node-running-3.2.1.tgz";
     hash = "sha512-Tb2FUhB4vUsGQlfSquQLYkApkuPAFQXGFzxWKHHumVz2dK+X1RUm/HnID4+TfIGYJ1kTcwOaCk/buYCEJr6YjQ==";
+    name = "why-is-node-running-3.2.1.tgz";
   };
   "ws@8.21.3" = fetchurl {
     url = "https://npm.flatt.tech/ws/-/ws-8.21.3.tgz";
