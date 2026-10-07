@@ -28,250 +28,260 @@
     hash = "sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==";
     name = "runtime-7.29.7.tgz";
   };
-  "@blazediff/core@1.9.1" = fetchurl {
-    url = "https://npm.flatt.tech/@blazediff/core/-/core-1.9.1.tgz";
-    hash = "sha512-ehg3jIkYKulZh+8om/O25vkvSsXXwC+skXmyA87FFx6A/45eqOkZsBltMw/TVteb0mloiGT8oGRTcjRAz66zaA==";
-    name = "core-1.9.1.tgz";
+  "@blazediff/core@1.10.0" = fetchurl {
+    url = "https://npm.flatt.tech/@blazediff/core/-/core-1.10.0.tgz";
+    hash = "sha512-AOQff0zgR7cGsZL+4E7hVkmujoPUpm0J9xzWGWZj5wCjd3gmxESXAPfKyuzs93VdpQNFhHlBhfOjrcZ+XTERtQ==";
+    name = "core-1.10.0.tgz";
+  };
+  "@jridgewell/resolve-uri@3.1.2" = fetchurl {
+    url = "https://npm.flatt.tech/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz";
+    hash = "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==";
+    name = "resolve-uri-3.1.2.tgz";
   };
   "@jridgewell/sourcemap-codec@1.6.0" = fetchurl {
     url = "https://npm.flatt.tech/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz";
     hash = "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==";
     name = "sourcemap-codec-1.6.0.tgz";
   };
-  "@oxc-project/runtime@0.146.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxc-project/runtime/-/runtime-0.146.0.tgz";
-    hash = "sha512-lbXHIpZ1MmK6zuw5txlMdIZ2waLVUIU5Gnm3sEuwJOiqDfQfbtjeHscatmeBoxbv8+If9LFM6PGh/3DcDWYIYw==";
-    name = "runtime-0.146.0.tgz";
+  "@jridgewell/trace-mapping@0.3.31" = fetchurl {
+    url = "https://npm.flatt.tech/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz";
+    hash = "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==";
+    name = "trace-mapping-0.3.31.tgz";
   };
-  "@oxc-project/types@0.146.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxc-project/types/-/types-0.146.0.tgz";
-    hash = "sha512-XC0QsnnhVe7sLIWmYmdPw7x5P0h4W8vUU3Nv1ySgWXtvCz8NizoAEpGXA0sOYoJQV2Rl13LgURAHQ5cI5ILCSA==";
-    name = "types-0.146.0.tgz";
+  "@oxc-project/runtime@0.153.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxc-project/runtime/-/runtime-0.153.0.tgz";
+    hash = "sha512-rXJvtlsVG4xJNq64hiaUTIatE7jbBgpa6l4QgmEa2jLgT3ULH9scUBkpsC9N1DfmqixLEyT6DuK6OSXozziIlw==";
+    name = "runtime-0.153.0.tgz";
   };
   "@oxc-project/types@0.149.0" = fetchurl {
     url = "https://npm.flatt.tech/@oxc-project/types/-/types-0.149.0.tgz";
     hash = "sha512-Efcc+iF0j3Bf67YjEqIqWXbX5XddXoK/Mw4K1/JuXwRCZ8N16VR7iT23nlCc9XrveFVh/E5Rqs2StT0V8v9LdA==";
     name = "types-0.149.0.tgz";
   };
-  "@oxfmt/binding-android-arm-eabi@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-android-arm-eabi/-/binding-android-arm-eabi-0.64.0.tgz";
-    hash = "sha512-o6uzh/jTOQeAY5TdkAeXdqv7MBRcPxiRA08zrcBtkKj5cSu/FMu0Hl7Q6Fi1KCKyCWZ6lJVjBzdsJvsKltUsGQ==";
-    name = "binding-android-arm-eabi-0.64.0.tgz";
+  "@oxc-project/types@0.153.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxc-project/types/-/types-0.153.0.tgz";
+    hash = "sha512-jSNrRIyvPVLL5E1z/tS5zLAprosGz/FuI1PWwEOz59j3E4TTTzSpqKb/RDGqJhhW0QHYISGXxq582wGx6T11Tw==";
+    name = "types-0.153.0.tgz";
   };
-  "@oxfmt/binding-android-arm64@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-android-arm64/-/binding-android-arm64-0.64.0.tgz";
-    hash = "sha512-jRGSUeeP7p3Gynw2YaCVtjBIA6ZxY6bEB/ES5i54OhqmRTyuVg7ZgstEtzgq6GOAJd+2QZ5pvf+bFfmW5Mp9cw==";
-    name = "binding-android-arm64-0.64.0.tgz";
+  "@oxfmt/binding-android-arm-eabi@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-android-arm-eabi/-/binding-android-arm-eabi-0.72.0.tgz";
+    hash = "sha512-u4U1uaDOVBuorGNC/07NLm48nECHOiJJka002YGML16Md2DRvf38RGBt01lH60EOGvNlFVmbLoksQedNBoZHKw==";
+    name = "binding-android-arm-eabi-0.72.0.tgz";
   };
-  "@oxfmt/binding-darwin-arm64@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-darwin-arm64/-/binding-darwin-arm64-0.64.0.tgz";
-    hash = "sha512-JINwtU2lW7nOFSqi+H2qplipNUqah9Gc1jgGmB82kTD4UnZrZIVxCJ9qEmFiKfjNq27gYLFhrUb0to86aCwMjw==";
-    name = "binding-darwin-arm64-0.64.0.tgz";
+  "@oxfmt/binding-android-arm64@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-android-arm64/-/binding-android-arm64-0.72.0.tgz";
+    hash = "sha512-GCnM+Ae2mWOKC+92y3FOb6eZJeVnBAVz82e3lITUUg+kxukYKzBNAvJ/hhHIfa2A0md55SYYhdWPddSSy3KPVA==";
+    name = "binding-android-arm64-0.72.0.tgz";
   };
-  "@oxfmt/binding-darwin-x64@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-darwin-x64/-/binding-darwin-x64-0.64.0.tgz";
-    hash = "sha512-gCmuswrgrOSajV4HCRFkVCGIruPq8bjYuPYgSE2WQB3mD6XrdyZ3JMSRZCkQ8zCxOyGWriBo6QoZ5nmMHQ1BfA==";
-    name = "binding-darwin-x64-0.64.0.tgz";
+  "@oxfmt/binding-darwin-arm64@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-darwin-arm64/-/binding-darwin-arm64-0.72.0.tgz";
+    hash = "sha512-LjQ8tlevdtwraFlWC6AnQ1Forzde0clRmnsP3QmK+ydSElDt/J+5Jc+m+//Ly1G97aP7WCNUw110QMIUw2K7xA==";
+    name = "binding-darwin-arm64-0.72.0.tgz";
   };
-  "@oxfmt/binding-freebsd-x64@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-freebsd-x64/-/binding-freebsd-x64-0.64.0.tgz";
-    hash = "sha512-Ab8g7a38pT0MMImjh7anRSTve6buWBIlcXIFBYa5xl4s6UxEgKSc2xOOhbGtLwvXnEi2PsEDGoJh3oUU7xkehQ==";
-    name = "binding-freebsd-x64-0.64.0.tgz";
+  "@oxfmt/binding-darwin-x64@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-darwin-x64/-/binding-darwin-x64-0.72.0.tgz";
+    hash = "sha512-+ZbcxhB1C34RQR5IldSyY6Z/yalJIxHXhP36PGE4sEq0f/lgL5jCLmOKoDeVm8dqd9gFGDsd1bNWHSGCAwdSkw==";
+    name = "binding-darwin-x64-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-arm-gnueabihf@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.64.0.tgz";
-    hash = "sha512-BgvS3CoQ+Xy2deoZqEN8JVKabcCZi2RxA3yant8G9OAv9KuPJ9TCjHkqigzdHUVwErZxEP5d2bzLIEyKYyBDLg==";
-    name = "binding-linux-arm-gnueabihf-0.64.0.tgz";
+  "@oxfmt/binding-freebsd-x64@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-freebsd-x64/-/binding-freebsd-x64-0.72.0.tgz";
+    hash = "sha512-yGPhA8sePEBFV9iGcprhyOk3Bz3fZshswMH3DpYIPZFLT1DG5LjiZ0j6AJQpSueaL6bUK0av1K+5+fe+ldy5EQ==";
+    name = "binding-freebsd-x64-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-arm-musleabihf@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.64.0.tgz";
-    hash = "sha512-QXpNxwoMj0YvnceCNZadNSden3bIcnvjn/sDp/rwZhRoZoZYGpHvtPyhGsdJz9uvT9GkaMW7SsLddurU56dt8w==";
-    name = "binding-linux-arm-musleabihf-0.64.0.tgz";
+  "@oxfmt/binding-linux-arm-gnueabihf@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.72.0.tgz";
+    hash = "sha512-/g5axuqFMcAtoQrFLR5EJEMDjR5Ea4GuzpdDmMpPWAgrF1DmL4kD1NPNVlpXEOxpFJnD6lPvLKYj1lzdlrfifA==";
+    name = "binding-linux-arm-gnueabihf-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-arm64-gnu@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.64.0.tgz";
-    hash = "sha512-BBgH3I1ppDsI5pZ4Pdhw0ceYxwVCfbU/bZEBCeZ6caRS9x0ZabErxubP7riGUn11PXZBhe8DYdjkDKP1FlVQ5w==";
-    name = "binding-linux-arm64-gnu-0.64.0.tgz";
+  "@oxfmt/binding-linux-arm-musleabihf@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.72.0.tgz";
+    hash = "sha512-InVitdHbS09PM+w+WinIiyX37rC9R3L7lUP9mKy9uKTEDSUFaLjWsLoreRIxKivnv7Ndqc6Trvi+K+b6ZzhiJg==";
+    name = "binding-linux-arm-musleabihf-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-arm64-musl@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.64.0.tgz";
-    hash = "sha512-v19HSjC/BGXdt26qEvKZtwAHgGmQ2Agcap2kQP+KIqoRZqivVzYth3ui2dJA1i+6/fjpjga85lIOaJJjQ/bOOw==";
-    name = "binding-linux-arm64-musl-0.64.0.tgz";
+  "@oxfmt/binding-linux-arm64-gnu@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.72.0.tgz";
+    hash = "sha512-WKjlyRAxpPjXoqeuwFBim5LscgvY+RNEiZ971C9JlRQZONhJTsXDki/oHFYQE+fzzRpzXh3owZvOdT3kNL2g+g==";
+    name = "binding-linux-arm64-gnu-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-ppc64-gnu@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.64.0.tgz";
-    hash = "sha512-PElLnOo4xFTBZrxPhgTIj0eHqZXwEBQoNWtb7facUV170T0B0FRET0iNbb3LUeLWTybkUW+vsdyv4ihOdyXGyw==";
-    name = "binding-linux-ppc64-gnu-0.64.0.tgz";
+  "@oxfmt/binding-linux-arm64-musl@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.72.0.tgz";
+    hash = "sha512-poafnbsPpJhR+5Mbwpf8CscugTyiRAzjTOxRVn8ra3X2jnURs2xL5Du2xl5g2iW85lICMglpmLf8jDjZEbNgzQ==";
+    name = "binding-linux-arm64-musl-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-riscv64-gnu@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.64.0.tgz";
-    hash = "sha512-Qzsg15n4F5CH+MorcRW4MkAEMiLzXmeG+DiDSbP/bBTqCmWOH3K9DHryNrve+JHlV0txS+B6Z9P5Xz+cmWeL+g==";
-    name = "binding-linux-riscv64-gnu-0.64.0.tgz";
+  "@oxfmt/binding-linux-ppc64-gnu@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.72.0.tgz";
+    hash = "sha512-zNUi0gKRsO7S3IfPzsTbnm88OedPuX32hmZFWZRWHvWJlAoZRwVbeO6Nb3hng4vDgL7qUKp4TGqzPz1mhsycYg==";
+    name = "binding-linux-ppc64-gnu-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-riscv64-musl@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.64.0.tgz";
-    hash = "sha512-/GZ358wnQ/Ez4UVnCcZIi56JkY0sOdZ+B108pqXKqZz3jLS59F4KEAB1Qv3fRlObrFEk+3L2vUQ/xoPx+3vjXw==";
-    name = "binding-linux-riscv64-musl-0.64.0.tgz";
+  "@oxfmt/binding-linux-riscv64-gnu@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.72.0.tgz";
+    hash = "sha512-qTY7z/iyF/rWI2HWwWMevXqZW5PZUOofUy2afK7v6rseXnpld3yjgyIk6pCux3DqWQ0lB+f5atvLJNBwzLvFsw==";
+    name = "binding-linux-riscv64-gnu-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-s390x-gnu@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.64.0.tgz";
-    hash = "sha512-/C9We3DXegowfLXtVCYHeNiU9azwCDr5cQkEtCVlc74vyn+lLQSPApJ1CZmxAduqeq/Oi3gQ+IVptyhCaTMtkQ==";
-    name = "binding-linux-s390x-gnu-0.64.0.tgz";
+  "@oxfmt/binding-linux-riscv64-musl@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.72.0.tgz";
+    hash = "sha512-w18qfo8vEMD6EKEHtzTvjc6jH8yCyXIT1Bn7PFWJd0PpZyzH/VQDx4xvjCh0LGz6GRzqiezbisTdG9AoXtpkZQ==";
+    name = "binding-linux-riscv64-musl-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-x64-gnu@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.64.0.tgz";
-    hash = "sha512-91KM2CeRWscIEHlj1NsW2WSnzGeq1Ehq+39bfDowTdkn+fcvK/x4Y1RcyqT7glyBjZio0ldkeCG6Usj3v7ASog==";
-    name = "binding-linux-x64-gnu-0.64.0.tgz";
+  "@oxfmt/binding-linux-s390x-gnu@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.72.0.tgz";
+    hash = "sha512-grW8HwEir+vK7fCcq1ZgL3NHQCfZ1PidiERE9Hbf+24xGys+DoDaoqTht4ccfn0PcBwbViLkwkda/KNpJu2KRQ==";
+    name = "binding-linux-s390x-gnu-0.72.0.tgz";
   };
-  "@oxfmt/binding-linux-x64-musl@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-linux-x64-musl/-/binding-linux-x64-musl-0.64.0.tgz";
-    hash = "sha512-gw7uEk9I+7zoT1EYLra1eWArIzNcz8e3jkv+Noo2+o2T7wPvsNSQbfoa4DSfZlvn1i6mJ05RiZ4/omaXPDNhQg==";
-    name = "binding-linux-x64-musl-0.64.0.tgz";
+  "@oxfmt/binding-linux-x64-gnu@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.72.0.tgz";
+    hash = "sha512-wQJRQfWBRIn88Pkr449EUViwRayrYUScg7ty+Ihiem21mQ9BUA6S9e/4RAgyNk9lMag0KBouyKskjq61rOC0WQ==";
+    name = "binding-linux-x64-gnu-0.72.0.tgz";
   };
-  "@oxfmt/binding-openharmony-arm64@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-openharmony-arm64/-/binding-openharmony-arm64-0.64.0.tgz";
-    hash = "sha512-HYHFf616FHSPSO07c09mjmXBfQ73wIVM3m0txOiooa5XZkGoxFd6B14PVj0LB0DXIqJ6wAO/dDR/NX/5UUaqnw==";
-    name = "binding-openharmony-arm64-0.64.0.tgz";
+  "@oxfmt/binding-linux-x64-musl@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-linux-x64-musl/-/binding-linux-x64-musl-0.72.0.tgz";
+    hash = "sha512-T1B0uQzafxuGPjjaPrZJ497nxoi1BiI65JfsYc56nNpmev3msfb/iaTmH2kQuNFqa8PKxpMlf3GhWrWBvBPORQ==";
+    name = "binding-linux-x64-musl-0.72.0.tgz";
   };
-  "@oxfmt/binding-win32-arm64-msvc@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.64.0.tgz";
-    hash = "sha512-uQjFp081IZSWD6VAofX2iO2z01awAdHmfC+NrieWIPKrT2hZKQDyq/U18M7ifC0sm0Wz8aHY/p6+FDYIzs/CrQ==";
-    name = "binding-win32-arm64-msvc-0.64.0.tgz";
+  "@oxfmt/binding-openharmony-arm64@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-openharmony-arm64/-/binding-openharmony-arm64-0.72.0.tgz";
+    hash = "sha512-OKxxgTurl7+hypVplO8QRAbbQlwEs0j1Y6FZv+ZN2qNbdxQk2muMlzuJNBGTCWwxQ0rkkOD1uK/DW1fvzoUSJA==";
+    name = "binding-openharmony-arm64-0.72.0.tgz";
   };
-  "@oxfmt/binding-win32-ia32-msvc@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.64.0.tgz";
-    hash = "sha512-lNM6byTAQ881jugzFu8juJTbNRgsUTlswMA6pJmwi1XDvmIqnnb49lcUAs5gz94fCJLrVN+/X3s3jOKqx23WIQ==";
-    name = "binding-win32-ia32-msvc-0.64.0.tgz";
+  "@oxfmt/binding-win32-arm64-msvc@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.72.0.tgz";
+    hash = "sha512-L78TKzURqvjuZOCo88ixMbPXf/RP7u31Y0cmjJ/KEmrHmfYhmhEvsDaTYPiyTRne64jUgCbADfY0YeoQk4/Xyw==";
+    name = "binding-win32-arm64-msvc-0.72.0.tgz";
   };
-  "@oxfmt/binding-win32-x64-msvc@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxfmt/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.64.0.tgz";
-    hash = "sha512-BtmbtL/QjMtF1a6C3CqoDluH2IfB6fJt62E+B9RFfUPtFk4Iz9PFS6+y/SzzOvSxc7aUk2Kphwg7Dh8lMbwu6g==";
-    name = "binding-win32-x64-msvc-0.64.0.tgz";
+  "@oxfmt/binding-win32-ia32-msvc@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.72.0.tgz";
+    hash = "sha512-gQtFW+Ii8BWgtJTAD17TY/WsdNS5gUfAPov8iI1jeq4r9lRRYImmxPL08UU00/RLaCfBJwh2UgINnDY0iOiZ+A==";
+    name = "binding-win32-ia32-msvc-0.72.0.tgz";
   };
-  "@oxlint-tsgolint/darwin-arm64@7.0.2001" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint-tsgolint/darwin-arm64/-/darwin-arm64-7.0.2001.tgz";
-    hash = "sha512-CUJEdbSZ54+Xy9OXqOhWLTKZKV0BBiV7C2i/ygyVmXtkUNXx5YCzN8DpSSshTAKktoL7S+tnQ/ftFG/i7X896w==";
-    name = "darwin-arm64-7.0.2001.tgz";
+  "@oxfmt/binding-win32-x64-msvc@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxfmt/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.72.0.tgz";
+    hash = "sha512-uhooIN+DCzWX5uH7mQkSVCsODqsGluGJ4n3ch4+mITtWKpESMDjUJUSDBAVFuYQDwqY2McPDKdKJbM0oZVW/Qw==";
+    name = "binding-win32-x64-msvc-0.72.0.tgz";
   };
-  "@oxlint-tsgolint/darwin-x64@7.0.2001" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint-tsgolint/darwin-x64/-/darwin-x64-7.0.2001.tgz";
-    hash = "sha512-pXfBb5BqONCcgrXQNUZWXgiYmRSWJzd97S8i41VVOh6ut0tyo+cJ5FKFpczDHxiVNfj/3e7c9B4MtztNdpIVCw==";
-    name = "darwin-x64-7.0.2001.tgz";
+  "@oxlint-tsgolint/darwin-arm64@7.0.2003" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint-tsgolint/darwin-arm64/-/darwin-arm64-7.0.2003.tgz";
+    hash = "sha512-TgV33rXr6ueXBwvc+0nssUkTBSXHJxv77I8p4RCjDjCnvexHtmoPiudVRDfj3S3puMDdeQdHW6jdUgUPy3nr/w==";
+    name = "darwin-arm64-7.0.2003.tgz";
   };
-  "@oxlint-tsgolint/linux-arm64@7.0.2001" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint-tsgolint/linux-arm64/-/linux-arm64-7.0.2001.tgz";
-    hash = "sha512-roP7zujb/QDPzDwEKsFFpzNHHy91/Y7oX9vQXk78ekyZtcQj1QXDIMH33gjDdHBfRl4K9pZ36xhRgrP4Zr+R8A==";
-    name = "linux-arm64-7.0.2001.tgz";
+  "@oxlint-tsgolint/darwin-x64@7.0.2003" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint-tsgolint/darwin-x64/-/darwin-x64-7.0.2003.tgz";
+    hash = "sha512-hY3FMAjIaPDdK3FNxyRXRfHPOFeoBn6dmnLyKZgQ2IbTTD1adXhl6PfCIqHhCPvurigv7nf7mYuWZZ19MmJzmg==";
+    name = "darwin-x64-7.0.2003.tgz";
   };
-  "@oxlint-tsgolint/linux-x64@7.0.2001" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint-tsgolint/linux-x64/-/linux-x64-7.0.2001.tgz";
-    hash = "sha512-UDezNqdECVmngu2TPnjaS1YoAmcTaBoI5lV9vk3VahBxoi+I5r9k3iJTT7qZoYWOXTD/7T7bNcwRgrocR6BscQ==";
-    name = "linux-x64-7.0.2001.tgz";
+  "@oxlint-tsgolint/linux-arm64@7.0.2003" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint-tsgolint/linux-arm64/-/linux-arm64-7.0.2003.tgz";
+    hash = "sha512-eAET4JpyfBbg8SO0K74o4R55tEjVC292pIyxGOw2XGf8x/HrPNyxwQ478jMYOM54FIVOHc8sJ6VRHxluy6lucw==";
+    name = "linux-arm64-7.0.2003.tgz";
   };
-  "@oxlint-tsgolint/win32-arm64@7.0.2001" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint-tsgolint/win32-arm64/-/win32-arm64-7.0.2001.tgz";
-    hash = "sha512-uJZhqB6pdXLuN+AD1F5082byyQti/NPmJA77GtcFlmT2HzRelqbNls3SaIqxpjdFgvSBF9g0yOKGBkGFg7kX8Q==";
-    name = "win32-arm64-7.0.2001.tgz";
+  "@oxlint-tsgolint/linux-x64@7.0.2003" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint-tsgolint/linux-x64/-/linux-x64-7.0.2003.tgz";
+    hash = "sha512-GXdyO/XyqDJ3s/llR/oOktLsYNjZtWSQBy0JMc+/0gsNPvTcseKPhn9c6KcFyWmnr6H4vljYALbujonqSzzEGw==";
+    name = "linux-x64-7.0.2003.tgz";
   };
-  "@oxlint-tsgolint/win32-x64@7.0.2001" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint-tsgolint/win32-x64/-/win32-x64-7.0.2001.tgz";
-    hash = "sha512-FkDRm8hx9OwzGQqyWG1tO5QrTLRApff9DzSgpz9QZau37BR8d1VYKOxMLGf6shPZntJFoTwIIJYT68VndYDCog==";
-    name = "win32-x64-7.0.2001.tgz";
+  "@oxlint-tsgolint/win32-arm64@7.0.2003" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint-tsgolint/win32-arm64/-/win32-arm64-7.0.2003.tgz";
+    hash = "sha512-TWauXnPfet0VgpmrstoAK58eJ4gbuwPUuUTQmYQAzE/RG1CpnxXtrKUJULf6lyerPE4KN3gM+DflIA1hOH+38Q==";
+    name = "win32-arm64-7.0.2003.tgz";
   };
-  "@oxlint/binding-android-arm-eabi@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-android-arm-eabi/-/binding-android-arm-eabi-1.79.0.tgz";
-    hash = "sha512-TebFaaMklO/RXzTv7PucaCq9l3X6D1gA+C8H6K4njtjFOV+zWE9MKLpulcJZN9bzytbUbQIY0mZuz12nQ5Kv4Q==";
-    name = "binding-android-arm-eabi-1.79.0.tgz";
+  "@oxlint-tsgolint/win32-x64@7.0.2003" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint-tsgolint/win32-x64/-/win32-x64-7.0.2003.tgz";
+    hash = "sha512-DoRmfe7j8VqNlukp8liRVW45GQDhzRccNenjD/pdzelgtffW47pCMd1xbJLkPaPbKnTwID3onn3VZlL7JbebEA==";
+    name = "win32-x64-7.0.2003.tgz";
   };
-  "@oxlint/binding-android-arm64@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-android-arm64/-/binding-android-arm64-1.79.0.tgz";
-    hash = "sha512-KqqnOtAVgNsPPF0YSodkFZA1O80jcKoCZCTu3bgsszxA+MrMP9TLzfXitKjEj1FmrPprKDMdRDMmY3weESO9sg==";
-    name = "binding-android-arm64-1.79.0.tgz";
+  "@oxlint/binding-android-arm-eabi@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-android-arm-eabi/-/binding-android-arm-eabi-1.87.0.tgz";
+    hash = "sha512-22tVIHlB9898OYsBKmYB6He1MCSqdTmK1BVWuSNUTVrpS0KWNege+U9uEYqGJ+KatQag0r/oU44i3OOs46z7HQ==";
+    name = "binding-android-arm-eabi-1.87.0.tgz";
   };
-  "@oxlint/binding-darwin-arm64@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-darwin-arm64/-/binding-darwin-arm64-1.79.0.tgz";
-    hash = "sha512-BVC2nsMzqQzRDPc5RhixkZ+m1p7iH4bxRRvqkbwDXX0PlQKm1BPy8J8cRjnAFafOq2QzI+BfO3vE8w2GZ3CBag==";
-    name = "binding-darwin-arm64-1.79.0.tgz";
+  "@oxlint/binding-android-arm64@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-android-arm64/-/binding-android-arm64-1.87.0.tgz";
+    hash = "sha512-JfZQ3MWf74n8ov0DojZpkOduIubYJvZL5tbTMMhDutsal6u1xH1QuNpN+lK+EQwF8AeAfgwTR2fgh5U2br27XA==";
+    name = "binding-android-arm64-1.87.0.tgz";
   };
-  "@oxlint/binding-darwin-x64@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-darwin-x64/-/binding-darwin-x64-1.79.0.tgz";
-    hash = "sha512-p6Lm+snmhGuLKL1+CpCV8L6ijkE/qJzK2H2jG9+eKJT0n31RbY4FLsdhexekgP3bLpw4Kgde+9DZuDZQ4yIInA==";
-    name = "binding-darwin-x64-1.79.0.tgz";
+  "@oxlint/binding-darwin-arm64@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-darwin-arm64/-/binding-darwin-arm64-1.87.0.tgz";
+    hash = "sha512-rkx6Xvvw93z2GImVOyvbZwAZcoY0Z6MJW177XNsSB+i/CBsH7ANyelTp01VZyIkM3iSXtqKVb4+ptBgPHap5pQ==";
+    name = "binding-darwin-arm64-1.87.0.tgz";
   };
-  "@oxlint/binding-freebsd-x64@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-freebsd-x64/-/binding-freebsd-x64-1.79.0.tgz";
-    hash = "sha512-qDMm0dXZnoHyRqSL4N4xUq82T4sqK5cbKSjvd/dF/YbMUXc2R1wEPf+vmA5S0qUmi0nwXfNbjXBtZaIqzQLIMg==";
-    name = "binding-freebsd-x64-1.79.0.tgz";
+  "@oxlint/binding-darwin-x64@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-darwin-x64/-/binding-darwin-x64-1.87.0.tgz";
+    hash = "sha512-cw5nYw7L/pQ2SgGBgOcg/Qo89llQre3vIc/kuBLhSICzu1r5s8L76H3ug6AIFsD98WpROj8/z5JVzkf4daxHaQ==";
+    name = "binding-darwin-x64-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-arm-gnueabihf@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.79.0.tgz";
-    hash = "sha512-2od7s0nuKPzqyUZAWk9KkCyGg7eI9dwFPZg+20lB15fKFkVZ0c9ZFxqPfiBAyDTlTkh9stPI0t+JlPCqMbItVA==";
-    name = "binding-linux-arm-gnueabihf-1.79.0.tgz";
+  "@oxlint/binding-freebsd-x64@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-freebsd-x64/-/binding-freebsd-x64-1.87.0.tgz";
+    hash = "sha512-x/SuznE6loRZK9gz9AS4ZmzNzSu+5KdeoCS+sVHhnrE8HM6AD8UyTjwldQTTqlXGvkwHASgB0NiTNOc3o3PdAg==";
+    name = "binding-freebsd-x64-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-arm-musleabihf@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-1.79.0.tgz";
-    hash = "sha512-ZOQUjkzDnvlhSE3+tWC3YXx94MMl+sYMlwH+u1+YGApGHOJP/YAc8ZBRFOXZ6eOBmxtXAWuS/fBcdZr8qqNO1A==";
-    name = "binding-linux-arm-musleabihf-1.79.0.tgz";
+  "@oxlint/binding-linux-arm-gnueabihf@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.87.0.tgz";
+    hash = "sha512-+JEDmCAXiiFmKhAjZhgAOwaHWY6WENOQ5QA+lFuY59tgsUCDOTRi46B+lENK6CWvtxsXpwkZXNOgpjAQcpIpnA==";
+    name = "binding-linux-arm-gnueabihf-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-arm64-gnu@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.79.0.tgz";
-    hash = "sha512-lu158FR4nGqGeRS3BQvtG85wRgU/Fy4MD5Cxp1hzJXizGiLo6u2742wJSCDKh8cFcZntvX7fcxlq4mMmfryH1g==";
-    name = "binding-linux-arm64-gnu-1.79.0.tgz";
+  "@oxlint/binding-linux-arm-musleabihf@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-1.87.0.tgz";
+    hash = "sha512-/uC9XqXLAC9AHFLNycwmSQEvKqGrOCgU+uXALI7gNW0DG81TJ/3T2eHnKdRvcb5R1gFEfjxDwI4e4zIa29rICQ==";
+    name = "binding-linux-arm-musleabihf-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-arm64-musl@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.79.0.tgz";
-    hash = "sha512-mbpKQeE2aflTjddaHK7MP8KP/OFbUM++lt5M635ENM8IyIdK0jm2t9pb+2v9mVVIvhF6TqA4l7F79Pll1mi+uw==";
-    name = "binding-linux-arm64-musl-1.79.0.tgz";
+  "@oxlint/binding-linux-arm64-gnu@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.87.0.tgz";
+    hash = "sha512-FTRYPsBy/M728vnUv7l+KAwSAa3Qi4BQbhVvy7NYuMTZ0sUa/OWsbMx79HVFw6u/5KWcaYayDsoOiv7xbevzDg==";
+    name = "binding-linux-arm64-gnu-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-ppc64-gnu@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.79.0.tgz";
-    hash = "sha512-WpGNua7gaxaHnpSDeog2ji8IDHn/QLPl9LPzwkR/FvVv58vT5BcXjRXnU+wbu3N75cpeha8CdC7ho/U2OIsB4g==";
-    name = "binding-linux-ppc64-gnu-1.79.0.tgz";
+  "@oxlint/binding-linux-arm64-musl@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.87.0.tgz";
+    hash = "sha512-6sC+N7IY0h1egd8SrYUGNN7CUyKJZ4bIZakKa7V7hfinf4jfi8Kq4+klJvFp5DqXcwMn44I5MeBwmJluO1odFg==";
+    name = "binding-linux-arm64-musl-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-riscv64-gnu@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-1.79.0.tgz";
-    hash = "sha512-tK1E93A5LVzISg4ngpKJnfTs7EqtIUceGI7MQ4GyDjJiLi8wPCkEyKlj2xkyKWZ1yzkDJyLHTBJ5/iFWRdnJvg==";
-    name = "binding-linux-riscv64-gnu-1.79.0.tgz";
+  "@oxlint/binding-linux-ppc64-gnu@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.87.0.tgz";
+    hash = "sha512-d5Mnn+ICbhoJPi37Ccjy+86T5qfH2+mSTrTMBXNPfB+wqSWOayBBLLIrCXdUy1YssluCVdGkl+DO9w5r5ODmUA==";
+    name = "binding-linux-ppc64-gnu-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-riscv64-musl@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-1.79.0.tgz";
-    hash = "sha512-qhQvUIrngXivA2A9pQ+xPCychztn/5qUv7yS3gDwXv3w7Rag+eTeeXWmRyx+t7XsW5x6LuY/8AsTq36UgFIblg==";
-    name = "binding-linux-riscv64-musl-1.79.0.tgz";
+  "@oxlint/binding-linux-riscv64-gnu@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-1.87.0.tgz";
+    hash = "sha512-sf5YWuUo1Dx9loqWCgF8P278MycfcD4JHjDC/LV5j11L3Lqa4PFiwCjD6B8kP4AjsgZZkLn3xbpJEtZBaccs4Q==";
+    name = "binding-linux-riscv64-gnu-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-s390x-gnu@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.79.0.tgz";
-    hash = "sha512-sv6AaVgU/eE6u+6WFiQVDcPPwTxP6IJMSB9k701W2r/r6Tx465e8vPvVyRxquNH4Vy6KwRNu90mVbxXJN8+5gg==";
-    name = "binding-linux-s390x-gnu-1.79.0.tgz";
+  "@oxlint/binding-linux-riscv64-musl@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-1.87.0.tgz";
+    hash = "sha512-+aCraYbmK3uU3P0rFojjeaK9pGY6JvBDXh/0CM+gPyWKmNmXmnFe0qj4qj02U4ibFpbd9Pa9CmDvIdjJUd29rA==";
+    name = "binding-linux-riscv64-musl-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-x64-gnu@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.79.0.tgz";
-    hash = "sha512-iFZL02deziHslb3jEX9KdqlAkYoo4fGyotchKDzdfK1f5mxlIBeiQeHhvK3iFpuEJSB4ma/qeFn9oxPiwnhUPQ==";
-    name = "binding-linux-x64-gnu-1.79.0.tgz";
+  "@oxlint/binding-linux-s390x-gnu@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.87.0.tgz";
+    hash = "sha512-7rzbZQIljo6VLWVPqUyLa2P/WV3VFsJB4M52R4NCUJn1A50yjtUsHxiMHFL9opEKGFIiTbZ3VQzmtcJOPUq4NQ==";
+    name = "binding-linux-s390x-gnu-1.87.0.tgz";
   };
-  "@oxlint/binding-linux-x64-musl@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-linux-x64-musl/-/binding-linux-x64-musl-1.79.0.tgz";
-    hash = "sha512-3DtZR2raqObnh7wXZoFYFd0Fw7skBvcb3f7A+/lkEiDuh8hrE6vv9b/62Qxao1a9/OeHLw/FcXlXzgsW9wTRFg==";
-    name = "binding-linux-x64-musl-1.79.0.tgz";
+  "@oxlint/binding-linux-x64-gnu@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.87.0.tgz";
+    hash = "sha512-Dry46Fa+AXE/xt9J/YriujU1pU9mzfNWHGQwtOYibAFH8HLrKWCi93AhIGnuUMiwn2JbuBkRyz51f50Ly4r4ow==";
+    name = "binding-linux-x64-gnu-1.87.0.tgz";
   };
-  "@oxlint/binding-openharmony-arm64@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-openharmony-arm64/-/binding-openharmony-arm64-1.79.0.tgz";
-    hash = "sha512-Oatt4GuA1WJkqzk2ozx4HrWROOi7opV3AKDw/U8qDIqeTqzsjn5K2x3REJMNjU3/KU/Bkq96Zi3CknaiDTaC/Q==";
-    name = "binding-openharmony-arm64-1.79.0.tgz";
+  "@oxlint/binding-linux-x64-musl@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-linux-x64-musl/-/binding-linux-x64-musl-1.87.0.tgz";
+    hash = "sha512-f/HMZez74gJvnRpGz+b5sdGyWrEgRLmFTXg9sNoqjPWogGxYHUhXKTKyMiYsu9rUGR2ciYqL3fk+Ua4JhMJbRA==";
+    name = "binding-linux-x64-musl-1.87.0.tgz";
   };
-  "@oxlint/binding-win32-arm64-msvc@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.79.0.tgz";
-    hash = "sha512-NAgZr9Qp8nIA9rpo0JEvwiabTF/2UVqBNnupBG9X4kxXcQoScJUTi+qHhvabb9s/thgj5wQ4XcIaJvb+ZMgoKw==";
-    name = "binding-win32-arm64-msvc-1.79.0.tgz";
+  "@oxlint/binding-openharmony-arm64@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-openharmony-arm64/-/binding-openharmony-arm64-1.87.0.tgz";
+    hash = "sha512-lEC6ZfPZm/07JlB7FsOWX9o1RiHlXiBW594LSUGuXmekC8LZmvUPP9XzE2WZcNxJi5cHA/Fw56o02c3JxgMA5g==";
+    name = "binding-openharmony-arm64-1.87.0.tgz";
   };
-  "@oxlint/binding-win32-ia32-msvc@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-1.79.0.tgz";
-    hash = "sha512-+KyXjIvcpaXmWW/j9NNY5yWjrIVxaX18VyIheQy3jwc2GSYgpCr7MGI/HxIGQ/shAL5IWEKbhsqoMpAO5Stiog==";
-    name = "binding-win32-ia32-msvc-1.79.0.tgz";
+  "@oxlint/binding-win32-arm64-msvc@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.87.0.tgz";
+    hash = "sha512-afBWKOD36dUiA9AenaiWpCg8xfyUVPYznyAAVXu413brK4RA5UI/Xoc4yfeGIT8G1a44MV+JR7hioryerBDzGQ==";
+    name = "binding-win32-arm64-msvc-1.87.0.tgz";
   };
-  "@oxlint/binding-win32-x64-msvc@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/@oxlint/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.79.0.tgz";
-    hash = "sha512-mEelcCMMBS57sIXh2veGMNy+pQwuGtcMxHxGIZWQ5Ba9pJ5jCCUFOZB9E2JhBaxGsURe+WGe0zJp4RVre52gpQ==";
-    name = "binding-win32-x64-msvc-1.79.0.tgz";
+  "@oxlint/binding-win32-ia32-msvc@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-1.87.0.tgz";
+    hash = "sha512-daptNsEOuru4/nJTxV4DBHNJ5GepzmaBVQf+jjgKQGi9NRlZKik+RFq4hUL7ewsF1pwjKM+SkYaMbF82UwFGnw==";
+    name = "binding-win32-ia32-msvc-1.87.0.tgz";
+  };
+  "@oxlint/binding-win32-x64-msvc@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/@oxlint/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.87.0.tgz";
+    hash = "sha512-k+m/EShyXE29J/r1fjk0HlAzhN5JhIvj044oSJkXTEkCLrWZQgXb/3r4q5LTw/eaKW/4GuMXG2xmiJs3s5rPNw==";
+    name = "binding-win32-x64-msvc-1.87.0.tgz";
   };
   "@oxlint/plugins@1.79.0" = fetchurl {
     url = "https://npm.flatt.tech/@oxlint/plugins/-/plugins-1.79.0.tgz";
@@ -362,11 +372,6 @@
     url = "https://npm.flatt.tech/@rolldown/pluginutils/-/pluginutils-1.0.1.tgz";
     hash = "sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==";
     name = "pluginutils-1.0.1.tgz";
-  };
-  "@standard-schema/spec@1.1.0" = fetchurl {
-    url = "https://npm.flatt.tech/@standard-schema/spec/-/spec-1.1.0.tgz";
-    hash = "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==";
-    name = "spec-1.1.0.tgz";
   };
   "@testing-library/dom@10.4.1" = fetchurl {
     url = "https://npm.flatt.tech/@testing-library/dom/-/dom-10.4.1.tgz";
@@ -513,210 +518,215 @@
     hash = "sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g==";
     name = "typescript-win32-x64-7.0.2.tgz";
   };
-  "@vitest/browser-preview@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/browser-preview/-/browser-preview-4.1.11.tgz";
-    hash = "sha512-iPKSE6Ibayey6HFgK1V1/aHgyhx7HSRk1YMi+lnBZGmlIiNV5Uc7xRkD9Su8RDylTxDECK23t7kTHdRKoqSYDQ==";
-    name = "browser-preview-4.1.11.tgz";
+  "@vitest/browser-preview@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/browser-preview/-/browser-preview-5.0.3.tgz";
+    hash = "sha512-jfnEBv5yDRPR1MeiTlTW5bcZoPsiI7MBhpZR8IJiSxVhdK6Pa4gPk3tLHTRxVHy24kkWxY2TnUbnszU3J1bQJw==";
+    name = "browser-preview-5.0.3.tgz";
   };
-  "@vitest/browser@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/browser/-/browser-4.1.11.tgz";
-    hash = "sha512-bwMovvAeuTFOK5kIFevw4VEf+1gVEICv4SYK4k3knJOxl6b1zEWud8mYKD73e1B0odAn174h1MofURy2TPWf3w==";
-    name = "browser-4.1.11.tgz";
+  "@vitest/browser@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/browser/-/browser-5.0.3.tgz";
+    hash = "sha512-7KHIkVA/gTRxQV9qPa9qLK+g5INZG6iRrlwXSFG5EKsOomW3UzzW7wsdt1Yp5PufzQ43lniuONlb4lUVCC2qSg==";
+    name = "browser-5.0.3.tgz";
   };
-  "@vitest/expect@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/expect/-/expect-4.1.11.tgz";
-    hash = "sha512-VX2x5vNJXET47KAFzwERI+KRMtTTCSWTfSMKsW7JsUsXV4psq++e3DvZpuTDOpHcxytiDs6p2nhVb2tVDiiUYw==";
-    name = "expect-4.1.11.tgz";
+  "@vitest/mocker@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/mocker/-/mocker-5.0.3.tgz";
+    hash = "sha512-T8sWAIbkSyAjkwTcaEc3Iu0o9A27X1/kdXrizhZkGuSKScRQtRzclfAMpOTcGdXCsqxeWlpGy3XjqaW8CpLORg==";
+    name = "mocker-5.0.3.tgz";
   };
-  "@vitest/mocker@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/mocker/-/mocker-4.1.11.tgz";
-    hash = "sha512-2XJVD55d1o5AZous5CCGKS74g/riOj9odEt2bQpCVZeblHyHdnMeFl4jl0XjU21stf4mbjUkew2eXQZt65g5CQ==";
-    name = "mocker-4.1.11.tgz";
+  "@vitest/pretty-format@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/pretty-format/-/pretty-format-5.0.3.tgz";
+    hash = "sha512-3hr5eV5z2ff0l2Q1vaKQbB4j3M3tElw8stDokEOTqXJB3Es5VrT8gBRIMY59gGuFp8Y61sWlWFK1aNUH5dHDYw==";
+    name = "pretty-format-5.0.3.tgz";
   };
-  "@vitest/pretty-format@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/pretty-format/-/pretty-format-4.1.11.tgz";
-    hash = "sha512-yiZzPbGTS9Sr/JpFl8zHrcIkAofNbFV6k21vIgQN/cY/oxZeXhJv5sc/MBJ5jFKWmWs+oJHw0UXLZjmf931+Vw==";
-    name = "pretty-format-4.1.11.tgz";
+  "@vitest/snapshot@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/snapshot/-/snapshot-5.0.3.tgz";
+    hash = "sha512-SK4YTg9jL+jwakHIZxfciuvyOQsbY15AueR3USGtsXzmy+3FbJgqjAbC+ac20mRLwfEDtO5sfTqK6bUCDTRVPA==";
+    name = "snapshot-5.0.3.tgz";
   };
-  "@vitest/runner@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/runner/-/runner-4.1.11.tgz";
-    hash = "sha512-LztvUgdwMNJMIkj3hQnnxiC2Xy1zNxq928W/xhjCLaNCzqTZOudjwbQf6v9IntZGPw132i2Lq2rgTRZHD3JHNw==";
-    name = "runner-4.1.11.tgz";
+  "@vitest/spy@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/spy/-/spy-5.0.3.tgz";
+    hash = "sha512-XhFysQTB8AZ+P4gMi+Lpo99vg2AZi0qKpaB9yXQl37+CaMEAPO3iH/wGVnSyL5MPERiLezpqTVtrR6UZH5GCXg==";
+    name = "spy-5.0.3.tgz";
   };
-  "@vitest/snapshot@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/snapshot/-/snapshot-4.1.11.tgz";
-    hash = "sha512-pN7ikn1ON7h8ee4gIAp4AzyK+zBtJPzVbqOgu5LCEh4VaJVbPQcgYQYJIMGQPXVeJJq1fnfazis7a5pFNPahog==";
-    name = "snapshot-4.1.11.tgz";
+  "@vitest/ui@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/ui/-/ui-5.0.3.tgz";
+    hash = "sha512-9dfvqDBvSbHM6y9YVXxAypkl2z7mrWozK/JFo237qI0cj/3M/kzDKiVZqzi3TE54Ler7Jditud7OMBZCyUvRHA==";
+    name = "ui-5.0.3.tgz";
   };
-  "@vitest/spy@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/spy/-/spy-4.1.11.tgz";
-    hash = "sha512-apNa/prQy2qCeywhnixOHPRCgGNhvg7T4Dapfl1GahLp/R+uhBm5cPyFoNVyqsNd2h1nJxL6BqqdIjiABL60YA==";
-    name = "spy-4.1.11.tgz";
+  "@vitest/utils@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/@vitest/utils/-/utils-5.0.3.tgz";
+    hash = "sha512-77fDTZv8eu1CzlIfgPU2yrl5MXSUaUAOvgdZEeVm3X3WIxUubIX2SforqS6176lT32HCF6uBVMYVqfHxw7o6eg==";
+    name = "utils-5.0.3.tgz";
   };
-  "@vitest/utils@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/@vitest/utils/-/utils-4.1.11.tgz";
-    hash = "sha512-zTCVGpyFsGWBhllOyKlTw/vnr6D9qxsfSDyfbyZmTyjHw5N/VuvzHpHoQjm2ZJzn4RJgx5w4r7V0er69CmLgPQ==";
-    name = "utils-4.1.11.tgz";
+  "@voidzero-dev/vite-plus-core@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-core/-/vite-plus-core-1.1.0.tgz";
+    hash = "sha512-Ai6HQP1zG0H3ZrmStEaMVKtDzW0xU3VgMzm3LFaXDQMEp8nAqvp0VGoU8HmpB9xv9vDSl+UxiSNOpuY9T714OQ==";
+    name = "vite-plus-core-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-core@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-core/-/vite-plus-core-0.3.0.tgz";
-    hash = "sha512-aOqoqIWaF+Q/geDU48pC2rVFEVSvLV1GGj/NdvhUiBhCZntoFNbwI+hjUeG8BMaPG67sOV6ey+/sgkdmGmKqaw==";
-    name = "vite-plus-core-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-darwin-arm64@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-darwin-arm64/-/vite-plus-darwin-arm64-1.1.0.tgz";
+    hash = "sha512-iWJdQZBRZWB6X1Aadk0Rrs/NJeP32Qb0OGeWnu1AYL0g6ZCj1yy3l9Oa+HasDyG97s+4UYo523LdBAAv3dlFwg==";
+    name = "vite-plus-darwin-arm64-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-darwin-arm64@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-darwin-arm64/-/vite-plus-darwin-arm64-0.3.0.tgz";
-    hash = "sha512-9ADr1egZ8T4tJOqrpQLhoDl95Y74R95+bsvjmin0gy1C0eQVhpmcNnBfb07KFNhJioJp9MMO7F7Dx4fQL5SKsw==";
-    name = "vite-plus-darwin-arm64-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-darwin-x64@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-darwin-x64/-/vite-plus-darwin-x64-1.1.0.tgz";
+    hash = "sha512-IYSQ2KdigRMuVkKCC+e5uNliCTSHa8j3ajHsFG2cfXoiGHS1f4ausbMEzNYtn9Tcn0Xsyo7l0LN8lvB7MapJhA==";
+    name = "vite-plus-darwin-x64-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-darwin-x64@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-darwin-x64/-/vite-plus-darwin-x64-0.3.0.tgz";
-    hash = "sha512-GegasVCwNeDOkNyvhLOuwU1+T2JkjY/Tq+SOvwphUpVcqQ6OOAUq9LlpoXviO2QL/Kq2NbMYjiAfPKVSTLUFQw==";
-    name = "vite-plus-darwin-x64-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-linux-arm64-gnu@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-arm64-gnu/-/vite-plus-linux-arm64-gnu-1.1.0.tgz";
+    hash = "sha512-PmrJG8Md5KCWi/akWJz5GRjei2QfRf48R4rPB9CfualzAAlpMOmaMGeV3eloWVAFye85uhdtzCmIAqN5OUVBJA==";
+    name = "vite-plus-linux-arm64-gnu-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-linux-arm64-gnu@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-arm64-gnu/-/vite-plus-linux-arm64-gnu-0.3.0.tgz";
-    hash = "sha512-nYI3KNYXkXjRPsSdR4Lr7J2xMxfR1+TplWlG/dV37qVXWAjbyHpoAlbULjZBAVJMyXRNlcADhBrEwXe4g6s48A==";
-    name = "vite-plus-linux-arm64-gnu-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-linux-arm64-musl@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-arm64-musl/-/vite-plus-linux-arm64-musl-1.1.0.tgz";
+    hash = "sha512-zFr57++m5U474XEMcFGV025TOv9V2I5d87yylcuI/SvxQwDE9P7T5iRl55vGzQOzzInSnQuru6ByNIfmGa+84A==";
+    name = "vite-plus-linux-arm64-musl-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-linux-arm64-musl@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-arm64-musl/-/vite-plus-linux-arm64-musl-0.3.0.tgz";
-    hash = "sha512-HRlVA3AOcuGXmOdHhQ+Zv5XAaKbYF9si5rRHoOsKl0UyBo4txA3OoJfmP0WjanfLUNmu85JyO2dO1ptL4C6wgg==";
-    name = "vite-plus-linux-arm64-musl-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-linux-x64-gnu@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-x64-gnu/-/vite-plus-linux-x64-gnu-1.1.0.tgz";
+    hash = "sha512-DXeRuTMylEbIVCQX+pSBM27lSPQwAKO6PDnGBJ6nFGhu37AmNeVl7cIChtcniXOuykbFduhSt3eIr/6CZHoEag==";
+    name = "vite-plus-linux-x64-gnu-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-linux-x64-gnu@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-x64-gnu/-/vite-plus-linux-x64-gnu-0.3.0.tgz";
-    hash = "sha512-9A+dFScPfwcrzF/rRR0zH8++2hOf6xtFmN/5LyzyfUywtw9MILXcC72IMcOeL6QRJwKUMsudi1rFeDE59azNvw==";
-    name = "vite-plus-linux-x64-gnu-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-linux-x64-musl@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-x64-musl/-/vite-plus-linux-x64-musl-1.1.0.tgz";
+    hash = "sha512-J7/Mb/kxtENUsL5Gh+8SSr/p054fSqU4oj0GEthr/2VEFSwZouOUigk6CzE7ANKFeTNJm40n8QCnjm7Oiy09pQ==";
+    name = "vite-plus-linux-x64-musl-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-linux-x64-musl@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-linux-x64-musl/-/vite-plus-linux-x64-musl-0.3.0.tgz";
-    hash = "sha512-KfIV3qaPdaOOE8JQMRHRE34FtZocl9O86XLTP6JMjDUlcx8FPgf8/fz/HFqJ8g232vM+JsgLI/YTVeXP8LkTKw==";
-    name = "vite-plus-linux-x64-musl-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-win32-arm64-msvc@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-win32-arm64-msvc/-/vite-plus-win32-arm64-msvc-1.1.0.tgz";
+    hash = "sha512-EXWz8Tt7skmI0fLMSq5zYcuHo6SCF0reG55qDB/NMvWVIAca6Dborq7D1HyKA8v6p39zOl8r07gR7yXuYv7eeQ==";
+    name = "vite-plus-win32-arm64-msvc-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-win32-arm64-msvc@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-win32-arm64-msvc/-/vite-plus-win32-arm64-msvc-0.3.0.tgz";
-    hash = "sha512-KRhdy5K13AYx9KBfCVHRrK7zSZU+bMW9CL6gTai+UkJgAmDJi1kjdSNboZOjO8mrzUnTCrELgMI2tnstcxSTuA==";
-    name = "vite-plus-win32-arm64-msvc-0.3.0.tgz";
+  "@voidzero-dev/vite-plus-win32-x64-msvc@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-win32-x64-msvc/-/vite-plus-win32-x64-msvc-1.1.0.tgz";
+    hash = "sha512-K9k77Mj/TszFHKsZePKsyfsIPo8HbjKeJUxaSJ6YZKAmSh9QvDsMFe4i4/HALwyii/PR1EQ8N0iN1nf9cNimGQ==";
+    name = "vite-plus-win32-x64-msvc-1.1.0.tgz";
   };
-  "@voidzero-dev/vite-plus-win32-x64-msvc@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/@voidzero-dev/vite-plus-win32-x64-msvc/-/vite-plus-win32-x64-msvc-0.3.0.tgz";
-    hash = "sha512-7+G+GxGmxdpQO0zjiGnkZFXKGqm0CrVduebRsJd6ccuOuxCQYPxLcoHq4WOaGrh56SrAGS7XjhnQCrXRkzKUVQ==";
-    name = "vite-plus-win32-x64-msvc-0.3.0.tgz";
+  "@yuku-codegen/binding-android-arm64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-android-arm64/-/binding-android-arm64-0.9.5.tgz";
+    hash = "sha512-jrOY5WM+AaAqkv51fHP1x28ifto4WgcZVzodLUyMU1jMWn5Sq+VciRdk/n8E0Ey5w4p4cWWE+m5GfXWOYh7Kzw==";
+    name = "binding-android-arm64-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-darwin-arm64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-darwin-arm64/-/binding-darwin-arm64-0.5.48.tgz";
-    hash = "sha512-yo96Oef12WzqnphInfz/eexVse3+kWgfGS5g2S3rFS3dcGn1ENW9xLFDZUP9rh+yP76DOq38wBoFi1+I9+6qBg==";
-    name = "binding-darwin-arm64-0.5.48.tgz";
+  "@yuku-codegen/binding-darwin-arm64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-darwin-arm64/-/binding-darwin-arm64-0.9.5.tgz";
+    hash = "sha512-4O4lkCQIzPZGjiNB1GORSI6hBECbiiSBS/APZXPvNKYH+nhY4uuqv03LNXA+SET3hoBjvr95P5rIhY8KQaQUBA==";
+    name = "binding-darwin-arm64-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-darwin-x64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-darwin-x64/-/binding-darwin-x64-0.5.48.tgz";
-    hash = "sha512-aRCTw0EZC4bVosmw//0OMYP5tGWFE0Cu5yUBFkUbhXx/iBzvORcJ2xPNlOp/vtCCo9Ys4vp8b0DigJV6uOVb2g==";
-    name = "binding-darwin-x64-0.5.48.tgz";
+  "@yuku-codegen/binding-darwin-x64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-darwin-x64/-/binding-darwin-x64-0.9.5.tgz";
+    hash = "sha512-9EvoUO0SEhD6/d8VHdWuPerepPMSR1y84+UEgz8Un1Ope14Oe7xMvePpEQLTLovoIFZ8Zg3iZ8z8E11pZMqC3g==";
+    name = "binding-darwin-x64-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-freebsd-x64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-freebsd-x64/-/binding-freebsd-x64-0.5.48.tgz";
-    hash = "sha512-CA0AQAEApDkbw51PdLWMtKPJ41/7rvXsS3SJs+phG7fHJI+MuFzWuLbkucZfZoEOiDscmcsfYIdgL8BsfuyKKQ==";
-    name = "binding-freebsd-x64-0.5.48.tgz";
+  "@yuku-codegen/binding-freebsd-x64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-freebsd-x64/-/binding-freebsd-x64-0.9.5.tgz";
+    hash = "sha512-HqT78WwgHTmp8lwujoUa9CrIortX4DdpuiVC18ZPSGvuuJf4ylpIEI6QrQEM78Zwz3muhAWAOXZ5irdiYY+AyA==";
+    name = "binding-freebsd-x64-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-linux-arm-gnu@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm-gnu/-/binding-linux-arm-gnu-0.5.48.tgz";
-    hash = "sha512-DuSQlk8bH4gpmW3/00P0NLagAcMv8jOxjT40cQmxKRkktr+SUOALCfkT89tdDq3qtY95NR2GXOZ7AjNh7KKqCw==";
-    name = "binding-linux-arm-gnu-0.5.48.tgz";
+  "@yuku-codegen/binding-linux-arm-gnu@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm-gnu/-/binding-linux-arm-gnu-0.9.5.tgz";
+    hash = "sha512-QJXwIW6Ms3QIawbcBIedmrmXnfdpuAOjZJ/eAABq5XTzWvSxZ7lutu9W5yIHahlaTaFnBo7ikrVMD1szLTpPUw==";
+    name = "binding-linux-arm-gnu-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-linux-arm-musl@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm-musl/-/binding-linux-arm-musl-0.5.48.tgz";
-    hash = "sha512-bxj4Ee+wlaJcWJwft2ReJXWw5sfl1qavDz6+dlRdU1xfTEtjPSNiAWhiCHnJR0R4Ygd57DnzSQmAVGvFv6RcGw==";
-    name = "binding-linux-arm-musl-0.5.48.tgz";
+  "@yuku-codegen/binding-linux-arm-musl@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm-musl/-/binding-linux-arm-musl-0.9.5.tgz";
+    hash = "sha512-eHbFy3IHGb+IYarrYwAo0yWSEQV3eAmEn6VrsKA6I1Wy1YPJxWqSJlV69JhqsHtJuJlljUIF3ex0y46yaKIu9w==";
+    name = "binding-linux-arm-musl-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-linux-arm64-gnu@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.5.48.tgz";
-    hash = "sha512-mk5JVWh+0JOe5ue8k17kbYX8uGBoKt3ZqoCyxNh4nYAAcX7+X1tFUiU7jbjctu4vHeejCBFSTdQ021+V31cUCQ==";
-    name = "binding-linux-arm64-gnu-0.5.48.tgz";
+  "@yuku-codegen/binding-linux-arm64-gnu@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.9.5.tgz";
+    hash = "sha512-ByoJMbySTaDhjAXSu8q6Lh7HKg3YoesXpcT72aYk0Aiw4PCznmY4ybpLTq0RCvp0RIPhFm/6yECFiGBwyCC1nw==";
+    name = "binding-linux-arm64-gnu-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-linux-arm64-musl@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.5.48.tgz";
-    hash = "sha512-4q3vkrNghbllyxOm2KesFLxCPKHF7r3JyQ7BWZccY1j2Y05yKoIFhoWCqIuQ2W/dpte9RI0+OVfwyxnrKg6fkA==";
-    name = "binding-linux-arm64-musl-0.5.48.tgz";
+  "@yuku-codegen/binding-linux-arm64-musl@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.9.5.tgz";
+    hash = "sha512-gD9vfXIoBw1toSxhO9rgmSu/FEfy3PMznJAxVjIuH8DrWEiDKXmJO0pJKfj1Ltbe/TmtWVZR+TjISqeSIGQzMg==";
+    name = "binding-linux-arm64-musl-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-linux-x64-gnu@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.5.48.tgz";
-    hash = "sha512-csd4M1EVrGaohM8acM6gq1zpUA/Rwe2ulUMBKUcwQXm/k6n7cq1A++qdew78SOVb4do3JH1WE+WFwoGQAcWc1w==";
-    name = "binding-linux-x64-gnu-0.5.48.tgz";
+  "@yuku-codegen/binding-linux-x64-gnu@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.9.5.tgz";
+    hash = "sha512-BARvdnvqMGjOr5Iel2JH+9H5vAIE0R6H0Z2fsT02xrvmI/1ZXNB8lkuX+ZGevPhZb3zJ9WeC/R8JZstrsUOK5g==";
+    name = "binding-linux-x64-gnu-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-linux-x64-musl@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-x64-musl/-/binding-linux-x64-musl-0.5.48.tgz";
-    hash = "sha512-KcDuEOT+GFoVKdvAWOv1v9iYjwnmvMZlO+j1Rw+5PYdeFLGWGzv/DD11y4SAAdwXIFcil4T0hibeIaF82WStMg==";
-    name = "binding-linux-x64-musl-0.5.48.tgz";
+  "@yuku-codegen/binding-linux-x64-musl@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-linux-x64-musl/-/binding-linux-x64-musl-0.9.5.tgz";
+    hash = "sha512-x8flcevS1fbb7ESrmpOY/pON4eInSaE/7Ktjqx2udOE2W33BNSZmJuwpyUgo54AoHNqrcaM7szqydyJn5fNvew==";
+    name = "binding-linux-x64-musl-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-win32-arm64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-win32-arm64/-/binding-win32-arm64-0.5.48.tgz";
-    hash = "sha512-HI8qNrI8dWM5BuqIMKsqornRvTNFrE6sm5zToIJ9YIa9zt5+29P7fJ7Nr39EVf6dAWSb6q7JSpScJnRsQ+FgZA==";
-    name = "binding-win32-arm64-0.5.48.tgz";
+  "@yuku-codegen/binding-win32-arm64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-win32-arm64/-/binding-win32-arm64-0.9.5.tgz";
+    hash = "sha512-KOL/rBatWqH4ZpCNoF8ZtSNdOJbAxBJLmk/VeRciepGROPTbPum1A9t67GpFgOU7qrkUWlPJdJ+KHKbvbmOt+w==";
+    name = "binding-win32-arm64-0.9.5.tgz";
   };
-  "@yuku-codegen/binding-win32-x64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-codegen/binding-win32-x64/-/binding-win32-x64-0.5.48.tgz";
-    hash = "sha512-X5YWJLO6EfBZpeBqO0AYESnUizbpFDWArcvVD61w0PEWQ3CaFRLnbQXs+kpM4ZZfGMfIE22zfA08QSY67q7TNQ==";
-    name = "binding-win32-x64-0.5.48.tgz";
+  "@yuku-codegen/binding-win32-x64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-codegen/binding-win32-x64/-/binding-win32-x64-0.9.5.tgz";
+    hash = "sha512-FxENahEjWSan59Syh/us/Kf4wNq8qrJLFJ3R2N4Oiwtb6yNdz/rWLNTIoNSssnsp7IoWJdUP6o/Z8ppg7lXMcg==";
+    name = "binding-win32-x64-0.9.5.tgz";
   };
-  "@yuku-parser/binding-darwin-arm64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.5.48.tgz";
-    hash = "sha512-If8mb7HH3vqghJ2NNZ8SuHfhsnjVzOxJpB8xcNOXS5WjYrs2mUhHIh5KOIvK13hDOzh0htGeGK3A6MsiEqE7HQ==";
-    name = "binding-darwin-arm64-0.5.48.tgz";
+  "@yuku-parser/binding-android-arm64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-android-arm64/-/binding-android-arm64-0.9.5.tgz";
+    hash = "sha512-A2JCFCSHfnficqYEw4Iujpx7XrkMM3UfFcgJFmYpZSo9zM4nyhmdIIE0FogSduuU60lhM0/UcfuUBXIVNBMlGQ==";
+    name = "binding-android-arm64-0.9.5.tgz";
   };
-  "@yuku-parser/binding-darwin-x64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-darwin-x64/-/binding-darwin-x64-0.5.48.tgz";
-    hash = "sha512-EimvPXfspzxf1K11eB6tCW5oiQEXB8g84T2wP1TwzQagdDKo33bkmmVF0B32vTIpXnk/Ifu5IB61izZ1MylljA==";
-    name = "binding-darwin-x64-0.5.48.tgz";
+  "@yuku-parser/binding-darwin-arm64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.9.5.tgz";
+    hash = "sha512-3PiyU+Eare4YuKaQ22N98/yAiROPY5o/NQJHraICzDvk4pgS+m+bgLKOvkGBRn33OnV95Vdv1Mn38b+MQHpULQ==";
+    name = "binding-darwin-arm64-0.9.5.tgz";
   };
-  "@yuku-parser/binding-freebsd-x64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.5.48.tgz";
-    hash = "sha512-0GcUMrumLHheThY9r5Tp46gaZYzn0irWPS1Zba6WY+vVQfhUtzGiWgXxI6tuXX0N32kEaaEVRpkKctvo6Kx3aQ==";
-    name = "binding-freebsd-x64-0.5.48.tgz";
+  "@yuku-parser/binding-darwin-x64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-darwin-x64/-/binding-darwin-x64-0.9.5.tgz";
+    hash = "sha512-blFMAFI7AInI83XaiOF8cIeiRM46Nz9EfpZtZPRLbKxSA9aAr5v8aHYpmfN6NoyXxAv/10pwS4gsAuc1W6fy5Q==";
+    name = "binding-darwin-x64-0.9.5.tgz";
   };
-  "@yuku-parser/binding-linux-arm-gnu@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm-gnu/-/binding-linux-arm-gnu-0.5.48.tgz";
-    hash = "sha512-8S5T5wjCC73dmmpQeZ49aYsSunIUM3D4Fc6rdK96c+Ayg/p3FmeSPF3xuLZHejcTmqJIIvnbfPlUF+rB6DITjQ==";
-    name = "binding-linux-arm-gnu-0.5.48.tgz";
+  "@yuku-parser/binding-freebsd-x64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.9.5.tgz";
+    hash = "sha512-TsNuL4qsZdO0tHp5GW43Y5fHeLPpPHA675wdcPNTcdq2ZO5AvsQWFFoiDg8CH4oBktfsQ9tdvKhjLnLYwKvp4g==";
+    name = "binding-freebsd-x64-0.9.5.tgz";
   };
-  "@yuku-parser/binding-linux-arm-musl@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm-musl/-/binding-linux-arm-musl-0.5.48.tgz";
-    hash = "sha512-tTmbxvnUHcK2/crS9547vk2SMmsajH1yqJ8ltXhIuHJgqR1v+d9n9KT+kSayo/5CS76LegeYxhMFjEivBH2hFA==";
-    name = "binding-linux-arm-musl-0.5.48.tgz";
+  "@yuku-parser/binding-linux-arm-gnu@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm-gnu/-/binding-linux-arm-gnu-0.9.5.tgz";
+    hash = "sha512-b0afYK5gHeV8RdmOcqAlgM8ONsye4cax4DMnIBaoJyPMd1UTGvTbpkqQcPVdhmHlcfcGVGMV1laeVovlr/dscw==";
+    name = "binding-linux-arm-gnu-0.9.5.tgz";
   };
-  "@yuku-parser/binding-linux-arm64-gnu@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.5.48.tgz";
-    hash = "sha512-KGYCBMqI2zfwyhgq5tpPVNe7jpUeYTBm8DhjdS+zqWNumde/PEC170QE5RHxcOAlsirIDeIUk0jqx+r/axoFSw==";
-    name = "binding-linux-arm64-gnu-0.5.48.tgz";
+  "@yuku-parser/binding-linux-arm-musl@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm-musl/-/binding-linux-arm-musl-0.9.5.tgz";
+    hash = "sha512-fD3lKzl+r6j6n8DwiMY53qnh5DLqD8KJjCp+NbVud54Nnh3Q9Wprqss3YzyMHP3NSJk663Wlg1E1X5qOuFVFig==";
+    name = "binding-linux-arm-musl-0.9.5.tgz";
   };
-  "@yuku-parser/binding-linux-arm64-musl@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.5.48.tgz";
-    hash = "sha512-2wTSMsCSXLTc2lZUjMAuU5X4cje55u205WJqfV5NWNF6j9pW/tXyxr15dJeekj8ziLqBXzIsj4DbRh4sY/WcjA==";
-    name = "binding-linux-arm64-musl-0.5.48.tgz";
+  "@yuku-parser/binding-linux-arm64-gnu@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.9.5.tgz";
+    hash = "sha512-aRU/aCphV1MWCl/lvI6NX8LgucHQ68Fx+vz7NBb/5MEr2EuzCxiPOQqeFcMdWh+2AED/p0AvAREch0c+cSnlhA==";
+    name = "binding-linux-arm64-gnu-0.9.5.tgz";
   };
-  "@yuku-parser/binding-linux-x64-gnu@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.5.48.tgz";
-    hash = "sha512-d/6v9UnGglVu1WC2JQyv/5aWSi5fXZeGSlidCfmHp4+N65N1GDKUnFtys5MK5eAPeAjTgSHGGtOc/yCcKTlv3A==";
-    name = "binding-linux-x64-gnu-0.5.48.tgz";
+  "@yuku-parser/binding-linux-arm64-musl@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.9.5.tgz";
+    hash = "sha512-5+Guro0l8H473YXlEjVNBRLN/IbPbJdnQh1zo0OLt49xxnON+XMJRRaEyTOTfkn9QSRg0+BhEKGR4W9Gu2uZJQ==";
+    name = "binding-linux-arm64-musl-0.9.5.tgz";
   };
-  "@yuku-parser/binding-linux-x64-musl@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.5.48.tgz";
-    hash = "sha512-gX19gw6u4ApPy7SYMPKfFlEkrtj6WlORvrTKK3sBQqjyV+8+mUAkQgxXNjHw4RnOiAmVYg7TOlZcg8d+Qqod9A==";
-    name = "binding-linux-x64-musl-0.5.48.tgz";
+  "@yuku-parser/binding-linux-x64-gnu@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.9.5.tgz";
+    hash = "sha512-pwwSyV9q+GlvzSXlsMZBMlgk22L5bud714/vqZCdeUTivzeUVltQzUaf3IQXOGXdpc59JYTeuMCtbGquaAUoCA==";
+    name = "binding-linux-x64-gnu-0.9.5.tgz";
   };
-  "@yuku-parser/binding-win32-arm64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-win32-arm64/-/binding-win32-arm64-0.5.48.tgz";
-    hash = "sha512-w6cQQLbqj3Jcom5Q7ifm103NUOQ9d+Cb4VU5lkrZDjMnwVJ9Hzzg1vCQR7miJuF44vhCXldbme5UryE3giEKlA==";
-    name = "binding-win32-arm64-0.5.48.tgz";
+  "@yuku-parser/binding-linux-x64-musl@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.9.5.tgz";
+    hash = "sha512-z18j6JN3lBHH8vzN7gG1M8fI0nlgItSfnC9PfbmUbt97iHViKfw2iA2G9fGwRMe5LyPRZBrejIlapbygPbpdaw==";
+    name = "binding-linux-x64-musl-0.9.5.tgz";
   };
-  "@yuku-parser/binding-win32-x64@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-parser/binding-win32-x64/-/binding-win32-x64-0.5.48.tgz";
-    hash = "sha512-4gO0HmG7fzFxrw1rs0dUdnnaY9YgennjETqDWrTSp7x9fmTUOAoN4VsMfP7YyliQeG1WJJHc55O+rOhmsLppow==";
-    name = "binding-win32-x64-0.5.48.tgz";
+  "@yuku-parser/binding-win32-arm64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-win32-arm64/-/binding-win32-arm64-0.9.5.tgz";
+    hash = "sha512-s6Gwttb1dQvtPX6Bgkw+UPC9IO3UBDXc6Zezog8MMgvu3UfJBBB9TQqKBX/2quu0Eyh+lLSAyNlIyyecaagUPg==";
+    name = "binding-win32-arm64-0.9.5.tgz";
   };
-  "@yuku-toolchain/types@0.5.43" = fetchurl {
-    url = "https://npm.flatt.tech/@yuku-toolchain/types/-/types-0.5.43.tgz";
-    hash = "sha512-kSpvPntnXw5+lYjO71ffBEnQ5ycQ74KGIYknh0TS4xeyCuBkOqxyJumxZkMhLBBUCLjDAbx2+Icnr3Zh4ftjpQ==";
-    name = "types-0.5.43.tgz";
+  "@yuku-parser/binding-win32-x64@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-parser/binding-win32-x64/-/binding-win32-x64-0.9.5.tgz";
+    hash = "sha512-FrERt9YWatY3bJfSUdi4YWY+6iQcyo3MzCC821BxlWM5TFZEHijnpz/bknR79VHlXY/9CvXz8ZlaAGPsTtN3nw==";
+    name = "binding-win32-x64-0.9.5.tgz";
+  };
+  "@yuku-toolchain/types@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/@yuku-toolchain/types/-/types-0.9.5.tgz";
+    hash = "sha512-KiuLNNgX9uNealaWAR+G3/cMXnRk9x4TY2EkYe/KIag+UPdwiA0RRf1hr1WAxzTP8KGzCTkqUdLPvqh32sEO3w==";
+    name = "types-0.9.5.tgz";
   };
   "ansi-regex@5.0.1" = fetchurl {
     url = "https://npm.flatt.tech/ansi-regex/-/ansi-regex-5.0.1.tgz";
@@ -782,6 +792,16 @@
     url = "https://npm.flatt.tech/fdir/-/fdir-6.5.0.tgz";
     hash = "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==";
     name = "fdir-6.5.0.tgz";
+  };
+  "fflate@0.8.3" = fetchurl {
+    url = "https://npm.flatt.tech/fflate/-/fflate-0.8.3.tgz";
+    hash = "sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==";
+    name = "fflate-0.8.3.tgz";
+  };
+  "flatted@3.4.4" = fetchurl {
+    url = "https://npm.flatt.tech/flatted/-/flatted-3.4.4.tgz";
+    hash = "sha512-5+ybhBZANEJxaH3X5evAFatUxLfEHSr7n6kYJ+1Qd0mUqr4eu9gIf6GDbWHf8RJijHrjjO8G+la14SlL2SeS1Q==";
+    name = "flatted-3.4.4.tgz";
   };
   "fsevents@2.3.3" = fetchurl {
     url = "https://npm.flatt.tech/fsevents/-/fsevents-2.3.3.tgz";
@@ -858,10 +878,10 @@
     hash = "sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==";
     name = "lz-string-1.5.0.tgz";
   };
-  "magic-string@0.30.21" = fetchurl {
-    url = "https://npm.flatt.tech/magic-string/-/magic-string-0.30.21.tgz";
-    hash = "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==";
-    name = "magic-string-0.30.21.tgz";
+  "magic-string@1.4.3" = fetchurl {
+    url = "https://npm.flatt.tech/magic-string/-/magic-string-1.4.3.tgz";
+    hash = "sha512-z12OxmaPGE0F4xlpGdjuAUckipLpQlTAuAmyGhNoD7ODpYUzvDfvtxUbjM/jwznyP178oju/KDdyi220wNJ0RQ==";
+    name = "magic-string-1.4.3.tgz";
   };
   "mrmime@2.0.1" = fetchurl {
     url = "https://npm.flatt.tech/mrmime/-/mrmime-2.0.1.tgz";
@@ -878,20 +898,20 @@
     hash = "sha512-XrsrhT5sybtKI6wakr2SPOlGZWWYbUXZ7a0jT8/QOeAPau+1X/bSegNe5YR75oJmEZQbKningirmGOEJCIk61Q==";
     name = "obug-2.2.1.tgz";
   };
-  "oxfmt@0.64.0" = fetchurl {
-    url = "https://npm.flatt.tech/oxfmt/-/oxfmt-0.64.0.tgz";
-    hash = "sha512-XZ4GFBN/PLbXKq+0zrgpQfPKYuJlUuj+nzZJY7UpIbFMNyefNLCdN9EwViycNqnYcv0wrn0jXcQLlqJp8RCKBg==";
-    name = "oxfmt-0.64.0.tgz";
+  "oxfmt@0.72.0" = fetchurl {
+    url = "https://npm.flatt.tech/oxfmt/-/oxfmt-0.72.0.tgz";
+    hash = "sha512-16OQeL0uhPZbfmT9S9WWM0Nv9+BmVi8Ra1uTYaSKj/qSCs6FB30KOhz9JoNYw6thT+K5bVxsk/tSEOu497i34g==";
+    name = "oxfmt-0.72.0.tgz";
   };
-  "oxlint-tsgolint@7.0.2001" = fetchurl {
-    url = "https://npm.flatt.tech/oxlint-tsgolint/-/oxlint-tsgolint-7.0.2001.tgz";
-    hash = "sha512-KjK/XLcXr1DSyonKhsuFqJRiuKqcyG9j3LJ8nkOsrLzGvodBPqzHOKauy10asLMDI0sUpvb+1sxlzff3udZvfg==";
-    name = "oxlint-tsgolint-7.0.2001.tgz";
+  "oxlint-tsgolint@7.0.2003" = fetchurl {
+    url = "https://npm.flatt.tech/oxlint-tsgolint/-/oxlint-tsgolint-7.0.2003.tgz";
+    hash = "sha512-VnK4zlqgmgq/7ZcjzCk/WpN8kKFsYGcB85Io9qT3wL4K8Un3RKmJkp793crNETieMusPMKOA4a+Mw2wbteI6TQ==";
+    name = "oxlint-tsgolint-7.0.2003.tgz";
   };
-  "oxlint@1.79.0" = fetchurl {
-    url = "https://npm.flatt.tech/oxlint/-/oxlint-1.79.0.tgz";
-    hash = "sha512-hVJ9hq9m2unPS+Of4eJJgCPdIeCC+3DHEUX3tkmrPJr3OK2hz7PhXwgC+ZP71ZcYu8cCDEtQrqLxWNvxBppBVg==";
-    name = "oxlint-1.79.0.tgz";
+  "oxlint@1.87.0" = fetchurl {
+    url = "https://npm.flatt.tech/oxlint/-/oxlint-1.87.0.tgz";
+    hash = "sha512-drxVlaW7Oqq7wSy1CN25znRu00aRq8n57Q2wniJRxCmtYVz07ufCm7EVDPQFZURrTgQIjzKrVEHAD/HcvJXObg==";
+    name = "oxlint-1.87.0.tgz";
   };
   "pathe@2.0.3" = fetchurl {
     url = "https://npm.flatt.tech/pathe/-/pathe-2.0.3.tgz";
@@ -933,11 +953,6 @@
     hash = "sha512-Z67nTmhZe7anqnM/EjI392w5i/ANUinjip7QYsOyN37oayduxt3ksdX0hf5OOamkAd53BiIHfbfSzfUmzKFQqQ==";
     name = "rolldown-1.2.8.tgz";
   };
-  "siginfo@2.0.0" = fetchurl {
-    url = "https://npm.flatt.tech/siginfo/-/siginfo-2.0.0.tgz";
-    hash = "sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==";
-    name = "siginfo-2.0.0.tgz";
-  };
   "sirv@3.0.2" = fetchurl {
     url = "https://npm.flatt.tech/sirv/-/sirv-3.0.2.tgz";
     hash = "sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==";
@@ -948,20 +963,15 @@
     hash = "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==";
     name = "source-map-js-1.2.1.tgz";
   };
-  "stackback@0.0.2" = fetchurl {
-    url = "https://npm.flatt.tech/stackback/-/stackback-0.0.2.tgz";
-    hash = "sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==";
-    name = "stackback-0.0.2.tgz";
-  };
   "std-env@4.2.0" = fetchurl {
     url = "https://npm.flatt.tech/std-env/-/std-env-4.2.0.tgz";
     hash = "sha512-oCUKSupKTHX53EyjDtuZQ64pjLJ6yYCtpmEw0goYxtjG9KpbRe8KAsl2tBUGU9DyMcJ0RwJ8GqJAFzMXcXW1Rw==";
     name = "std-env-4.2.0.tgz";
   };
-  "tinybench@2.9.0" = fetchurl {
-    url = "https://npm.flatt.tech/tinybench/-/tinybench-2.9.0.tgz";
-    hash = "sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==";
-    name = "tinybench-2.9.0.tgz";
+  "tinybench@6.2.1" = fetchurl {
+    url = "https://npm.flatt.tech/tinybench/-/tinybench-6.2.1.tgz";
+    hash = "sha512-IAbQaPJIIdhVxi0mqy9lez1wEwje0UQf9F1vwtbelEG5Nbgn0nPOxCvU+mNeNS9gyJTAhrHp74CbUaSynQpZcQ==";
+    name = "tinybench-6.2.1.tgz";
   };
   "tinyexec@1.3.1" = fetchurl {
     url = "https://npm.flatt.tech/tinyexec/-/tinyexec-1.3.1.tgz";
@@ -973,10 +983,10 @@
     hash = "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==";
     name = "tinyglobby-0.2.17.tgz";
   };
-  "tinypool@2.1.0" = fetchurl {
-    url = "https://npm.flatt.tech/tinypool/-/tinypool-2.1.0.tgz";
-    hash = "sha512-Pugqs6M0m7Lv1I7FtxN4aoyToKg1C4tu+/381vH35y8oENM/Ai7f7C4StcoK4/+BSw9ebcS8jRiVrORFKCALLw==";
-    name = "tinypool-2.1.0.tgz";
+  "tinypool@2.2.0" = fetchurl {
+    url = "https://npm.flatt.tech/tinypool/-/tinypool-2.2.0.tgz";
+    hash = "sha512-jBrmx4lYmaC9k/mgPbylxs7kBUxHtD8256up+HjLaDFfXScKJQyil+SWXSvhAtT7XHo+yTVlpB81PGmHP8oLSQ==";
+    name = "tinypool-2.2.0.tgz";
   };
   "tinyrainbow@3.1.1" = fetchurl {
     url = "https://npm.flatt.tech/tinyrainbow/-/tinyrainbow-3.1.1.tgz";
@@ -998,39 +1008,43 @@
     hash = "sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==";
     name = "undici-types-7.18.2.tgz";
   };
-  "vite-plus@0.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/vite-plus/-/vite-plus-0.3.0.tgz";
-    hash = "sha512-GNWbWuWD37frCSFrz6MLzUo62bTv5IOJozHEgZYOkxsLkuQtTwm4TowzpfoGrSsfwhAAtfPd/sK1Y0+v1SwhZA==";
-    name = "vite-plus-0.3.0.tgz";
+  "vite-plus@1.1.0" = fetchurl {
+    url = "https://npm.flatt.tech/vite-plus/-/vite-plus-1.1.0.tgz";
+    hash = "sha512-khkRlY70qqbBV0QmF9QKXSrhxIRYftb1H05AJMowMoq7iouchmAoXYeReZ8pKKMOadqrWVxFa3S9BA2m7w59iA==";
+    name = "vite-plus-1.1.0.tgz";
   };
   "vite@8.3.0" = fetchurl {
     url = "https://npm.flatt.tech/vite/-/vite-8.3.0.tgz";
     hash = "sha512-lhZBVvEHefgE+HQZC9O7EBJgCU/nVzFNl7vkS4RE0APtWLP02/8QVIkQtzBxPquh7lq5/78NHipTj7ODQ6XuyQ==";
     name = "vite-8.3.0.tgz";
   };
-  "vitest@4.1.11" = fetchurl {
-    url = "https://npm.flatt.tech/vitest/-/vitest-4.1.11.tgz";
-    hash = "sha512-fhACrNXUidIbGSBr5FlbuBkO7VWC1ZyLl0DO4CU2DrQoAPxX84Ysxs+HeGQpii5lZWV1Q4gBZTTu49mF+A6Edw==";
-    name = "vitest-4.1.11.tgz";
+  "vitest@5.0.3" = fetchurl {
+    url = "https://npm.flatt.tech/vitest/-/vitest-5.0.3.tgz";
+    hash = "sha512-xMw97S3rjdtj5dkVat7jCsqWBpvchs3RlpQctUqwJD0KkERk40vz2fJ77lDwW/Vzh/pk18eItYAzkodhSes3jQ==";
+    name = "vitest-5.0.3.tgz";
   };
-  "why-is-node-running@2.3.0" = fetchurl {
-    url = "https://npm.flatt.tech/why-is-node-running/-/why-is-node-running-2.3.0.tgz";
-    hash = "sha512-hUrmaWBdVDcxvYqnyh09zunKzROWjbZTiNy8dBEjkS7ehEDQibXJ7XvlmtbwuTclUiIyN+CyXQD4Vmko8fNm8w==";
-    name = "why-is-node-running-2.3.0.tgz";
+  "why-is-node-running@3.2.1" = fetchurl {
+    url = "https://registry.npmjs.org/why-is-node-running/-/why-is-node-running-3.2.1.tgz";
+    hash = "sha512-Tb2FUhB4vUsGQlfSquQLYkApkuPAFQXGFzxWKHHumVz2dK+X1RUm/HnID4+TfIGYJ1kTcwOaCk/buYCEJr6YjQ==";
   };
   "ws@8.21.3" = fetchurl {
     url = "https://npm.flatt.tech/ws/-/ws-8.21.3.tgz";
     hash = "sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==";
     name = "ws-8.21.3.tgz";
   };
-  "yuku-codegen@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/yuku-codegen/-/yuku-codegen-0.5.48.tgz";
-    hash = "sha512-p7HxD5Xl4jzDzqMrGePAOeSHmRY4g58h4HuGq15weQFPxuPWd/W6e7nqp/+Lea6JfpOdBwJOAyXFqIZ/J9Zfnw==";
-    name = "yuku-codegen-0.5.48.tgz";
+  "yuku-ast@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/yuku-ast/-/yuku-ast-0.9.5.tgz";
+    hash = "sha512-Q8qW8WwQnN5Cm0ZZivdRIfv0sRLTjUq0YumXJkw8CYN1aCdICH9rk4C47/4n6kA5EqDtlj+F608twoTSV2MwdQ==";
+    name = "yuku-ast-0.9.5.tgz";
   };
-  "yuku-parser@0.5.48" = fetchurl {
-    url = "https://npm.flatt.tech/yuku-parser/-/yuku-parser-0.5.48.tgz";
-    hash = "sha512-OWBfhrpgK9+/4+IXG9oT8Bao4AhViQA7vdyNNH7EUg8dQYgwa70XtIBWTpCEme1P1ECyoDNYkn0wT63f8XRcVA==";
-    name = "yuku-parser-0.5.48.tgz";
+  "yuku-codegen@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/yuku-codegen/-/yuku-codegen-0.9.5.tgz";
+    hash = "sha512-zGUVyDpSK4b6c9B0yyxi2P0wujn1XZTbG9dCb7d6gyAoP63EMgyLzUwPUvwxPG5jgYqhlI7w+S3oCyapqGr4PA==";
+    name = "yuku-codegen-0.9.5.tgz";
+  };
+  "yuku-parser@0.9.5" = fetchurl {
+    url = "https://npm.flatt.tech/yuku-parser/-/yuku-parser-0.9.5.tgz";
+    hash = "sha512-IBnAdNVMswWbJcM7woPluOudectJzFjJ1N8jVRxP9Uq4CIv5hZdBIcdmtRbFDYF/Ph2j2gVup4YJ4N9mh0jYFA==";
+    name = "yuku-parser-0.9.5.tgz";
   };
 }

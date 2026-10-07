@@ -85,7 +85,7 @@ FlakeHub and npm publication are independent choices.
 
 Run `vp run fix` and `vp run ci`.
 The aggregate task schedules independent checks, tests, native compilation, and portable packaging in parallel through Vite+ dependencies. The npm dry run depends on `pack`. CI does not execute the application or a smoke command.
-Keep default task caching, including `fix`. Native output is declared with `output: ['build/**']` and excluded from automatic build input tracking. Verify cached output restoration and source/configuration invalidation when changing task definitions.
+Keep default task caching, including `fix`. Native output is declared with `cache: { output: ['build/**'] }` and excluded from automatic build input tracking. Verify cached output restoration and source/configuration invalidation when changing task definitions.
 Separately run the compiled executable with Bun and Node absent from PATH and verify its expected output, as described in the customized developer document.
 Nix package builds are neither required initialization validation nor part of normal CI.
 Review the final documents for obsolete paths and placeholders, exclude temporary files under `tmp/`, and commit the initialized project.
