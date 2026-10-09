@@ -22,10 +22,10 @@
     "bin": "bun run src/main.ts"
   },
   "devDependencies": {
-    "@tsconfig/node-ts": "23.6.4",
-    "@tsconfig/strictest": "2.0.8",
-    "@types/node": "24.13.4",
-    "typescript": "7.0.2",
+    "@tsconfig/node-ts": "^23.6.4",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/node": "^24.13.4",
+    "typescript": "^7.0.2",
     "vite-plus": "^1.0.0"
   },
   "engines": {

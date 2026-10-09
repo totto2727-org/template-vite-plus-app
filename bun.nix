@@ -969,8 +969,9 @@
     name = "source-map-js-1.2.1.tgz";
   };
   "stackback@0.0.2" = fetchurl {
-    url = "https://registry.npmjs.org/stackback/-/stackback-0.0.2.tgz";
+    url = "https://npm.flatt.tech/stackback/-/stackback-0.0.2.tgz";
     hash = "sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==";
+    name = "stackback-0.0.2.tgz";
   };
   "std-env@4.2.0" = fetchurl {
     url = "https://npm.flatt.tech/std-env/-/std-env-4.2.0.tgz";

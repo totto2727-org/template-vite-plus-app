@@ -5,10 +5,10 @@
     "": {
       "name": "template-vite-plus-app",
       "devDependencies": {
-        "@tsconfig/node-ts": "23.6.4",
-        "@tsconfig/strictest": "2.0.8",
-        "@types/node": "24.13.4",
-        "typescript": "7.0.2",
+        "@tsconfig/node-ts": "^23.6.4",
+        "@tsconfig/strictest": "^2.0.8",
+        "@types/node": "^24.13.4",
+        "typescript": "^7.0.2",
         "vite-plus": "^1.0.0",
       },
     },
@@ -392,7 +392,7 @@
 
     "source-map-js": ["source-map-js@1.2.1", "https://npm.flatt.tech/source-map-js/-/source-map-js-1.2.1.tgz", {}, "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="],
 
-    "stackback": ["stackback@0.0.2", "", {}, "sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw=="],
+    "stackback": ["stackback@0.0.2", "https://npm.flatt.tech/stackback/-/stackback-0.0.2.tgz", {}, "sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw=="],
 
     "std-env": ["std-env@4.2.0", "https://npm.flatt.tech/std-env/-/std-env-4.2.0.tgz", {}, "sha512-oCUKSupKTHX53EyjDtuZQ64pjLJ6yYCtpmEw0goYxtjG9KpbRe8KAsl2tBUGU9DyMcJ0RwJ8GqJAFzMXcXW1Rw=="],
 
