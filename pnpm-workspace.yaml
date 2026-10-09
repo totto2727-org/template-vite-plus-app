@@ -1,8 +1,0 @@
-# Enforce pnpm's default release age without falling back to immature versions.
-minimumReleaseAgeStrict: true
-
-# Vite+ README: Manual Installation & Migration.
-# Match vite-plus and its bundled Vitest, not independent upstream toolchains.
-overrides:
-  vite@*: npm:@voidzero-dev/vite-plus-core@1.1.0
-  vitest@*: 5.0.3

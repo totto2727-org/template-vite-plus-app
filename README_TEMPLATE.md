@@ -27,21 +27,21 @@ Hello, world!
 
 - **Platform**: macOS on Apple Silicon, or Linux on ARM64 or x86-64.
 - **Nix installation**: Enable `nix-command` and `flakes`. The native executable needs no separate Bun or Node.js runtime.
-- **npm installation**: Install Node.js 24 or later with npm for `npm`/`npx`, and install Bun on PATH to run the portable CLI.
+- **Bun installation**: Install Bun on PATH to acquire and run the portable CLI from the npm registry.
 
 ## Setup
 
 ### Run without installing
 
 ```bash
-npx @username/project
+bunx @username/project
 nix run github:username/project
 ```
 
 ### Install
 
 ```bash
-npm install --global @username/project
+bun add --global @username/project
 nix profile add github:username/project
 ```
 

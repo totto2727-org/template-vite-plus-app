@@ -7,6 +7,7 @@ bun2nix.mkDerivation {
     fileset = lib.fileset.unions [
       ./src
       ./package.json
+      ./bunfig.toml
       ./bun.lock
       ./tsconfig.json
     ];
