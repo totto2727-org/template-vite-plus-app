@@ -22,8 +22,10 @@ export default defineConfig({
     tasks: {
       build: {
         command: 'bun build --compile src/main.ts --outfile build/project',
-        input: [{ auto: true }, '!build/**'],
-        output: ['build/**'],
+        cache: {
+          input: [{ auto: true }, '!build/**'],
+          output: ['build/**'],
+        },
       },
       check: 'vp check',
       ci: {
@@ -37,7 +39,7 @@ export default defineConfig({
       },
       pack: {
         command: 'vp pack',
-        output: ['dist/**'],
+        cache: { output: ['dist/**'] },
       },
       test: 'vp test run',
     },
