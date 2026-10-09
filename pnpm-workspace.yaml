@@ -1,3 +1,6 @@
+# Enforce pnpm's default release age without falling back to immature versions.
+minimumReleaseAgeStrict: true
+
 # Vite+ README: Manual Installation & Migration.
 # Match vite-plus and its bundled Vitest, not independent upstream toolchains.
 overrides:
