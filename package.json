@@ -19,7 +19,7 @@
     "access": "public"
   },
   "scripts": {
-    "bin": "bun run src/main.ts"
+    "bin": "vp exec bun run src/main.ts"
   },
   "devDependencies": {
     "@tsconfig/node-ts": "^23.6.4",

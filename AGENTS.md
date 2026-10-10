@@ -30,7 +30,7 @@
 
 Use the user's repository name, command name, purpose, and license.
 Resolve missing ownership and publication decisions with the user instead of inventing them.
-Work from the copied repository root, enter `nix develop`, and run `bun install --frozen-lockfile`.
+Work from the copied repository root, enter `nix develop`, and run `vp install --frozen-lockfile`.
 Review `.envrc` before optionally running `direnv allow`.
 
 ### 2. Replace the starter
@@ -38,7 +38,7 @@ Review `.envrc` before optionally running `direnv allow`.
 Update the identity and repository URL in `package.json`, the flake description, and the license holder.
 Replace `project` in `package.json`'s `bin` mapping, `vite.config.ts`, `package.nix`, the package/overlay attributes in `flake.nix`, and documentation with the desired executable name.
 Replace the source and tests with the project's behavior.
-Retain the `bin` script using `bun run src/main.ts` for development execution and `bun build --compile src/main.ts --outfile build/project` for the native `build` task, adjusting the entrypoint and command name if needed.
+Retain the `bin` script using `vp exec bun run src/main.ts` for development execution and `vp exec bun build --compile src/main.ts --outfile build/project` for the native `build` task, adjusting the entrypoint and command name if needed.
 The separate `pack` task uses `vp pack` to generate `dist/main.mjs` for npm with a Bun shebang. Keep the npm `bin` mapping and `files: ["dist"]` aligned with this output, never with the native `build/` directory.
 Keep `tsconfig.json` extending the exact `@tsconfig/strictest` and `@tsconfig/node-ts` presets in that order, with ESNext targeting and only project-specific options locally.
 Keep both formatting and linting in Vite+, including `semi: false`, single quotes, line width 120, and unwrapped Markdown prose.
@@ -50,7 +50,7 @@ Do not create `CLAUDE.md`.
 Keep `package.nix` and the flake package/overlay outputs as the compiled CLI distribution.
 The root bun2nix input follows `vite-plus-overlay/bun2nix`, reusing the existing pinned dependency instead of adding an independently versioned builder.
 Use Bun as the only package manager, with `bun.lock` for both development and Nix packaging.
-After changing dependencies, run `bun install` and `bun2nix -o bun.nix` inside the Nix shell.
+After changing dependencies, run `vp install` and `bun2nix -o bun.nix` inside the Nix shell.
 Review and commit `bun.lock` and `bun.nix` together.
 Keep `packageManager` aligned with Bun in the pinned Nix shell.
 Keep `bunfig.toml`'s `minimumReleaseAge = 86400` and do not add release-age exclusions or unsupported strict settings.
@@ -76,7 +76,7 @@ Replace the npm package name, repository URL, version, command name, and copied-
 Confirm ownership and configure the npm package's Trusted Publisher for the exact GitHub owner, repository, and `publish.yml` filename. If the package must first be created, the owner performs that initial publication manually.
 Keep job-scoped `id-token: write` permissions and shared `setup-nix@main`, `setup-typescript@main`, and `publish-npm@main`, with `working-directory: .`. Do not add registry tokens.
 Review the shared actions, protect release tags, remove `private: true` only when ready, and rename the disabled workflow to `publish.yml` only after trust is configured.
-Validate `vp run npm:check`, inspect an actual `bun pm pack --destination tmp` archive, and verify its installed Bun CLI before publishing. The tarball must contain `dist/` and package metadata, never `build/`, source files, or temporary artifacts.
+Validate `vp run npm:check`, inspect an actual `vp pm pack --pack-destination tmp` archive, and verify its installed Bun CLI before publishing. The tarball must contain `dist/` and package metadata, never `build/`, source files, or temporary artifacts.
 The release workflow builds only the portable npm artifact and publishes through the shared action on a `v<version>` tag matching `package.json`. Native Nix packaging remains independent.
 See [npm trusted publishing](https://docs.npmjs.com/trusted-publishers/) for registry setup requirements.
 

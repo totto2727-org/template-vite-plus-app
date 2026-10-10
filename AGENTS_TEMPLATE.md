@@ -28,20 +28,20 @@ package.nix        bun2nix compile package installed as bin/project
 ### Standard tasks
 
 - `nix develop`: Enter the pinned Node.js, Bun, Vite+, bun2nix, and nixfmt environment.
-- `bun install --frozen-lockfile`: Install locked development dependencies.
-- `vp run bin`: Run the CLI using `bun run src/main.ts`.
+- `vp install --frozen-lockfile`: Install locked development dependencies.
+- `vp run bin`: Run the CLI using `vp exec bun run src/main.ts`.
 - `vp run fix`: Apply Vite+ formatting and supported lint fixes with `vp check --fix`.
 - `vp run check`: Check formatting, lint, and TypeScript types through the cached `vp check` task.
 - `vp run test`: Run tests once through the cached `vp test run` task.
-- `vp run build`: Run `bun build --compile src/main.ts --outfile build/project` for the current OS and CPU.
+- `vp run build`: Run `vp exec bun build --compile src/main.ts --outfile build/project` for the current OS and CPU.
 - `vp run pack`: Build the portable Bun-shebang npm launcher with `vp pack` into `dist/main.mjs`, separate from the native executable.
-- `vp run npm:check`: Build `pack` first, then inspect npm package contents with `bun pm pack --dry-run`.
+- `vp run npm:check`: Build `pack` first, then inspect npm package contents with `vp pm pack -- --dry-run`.
 - `vp run ci`: Schedule independent checks, tests, native compilation, and portable packaging in parallel. npm verification depends on packaging. Do not execute the application in regular CI.
 - `vp run --verbose --log labeled ci`: Inspect dependency scheduling and cache hit/miss reasons. Put runner flags before the task name.
 - `env -i PATH= "$PWD/build/project"`: Separately validate the compiled executable without Bun or Node.js on PATH after building. Expect `Hello, world!` and exit status 0.
-- `bun install`: Update the sole dependency lock and development installation after manifest changes.
+- `vp install`: Update the sole dependency lock and development installation after manifest changes.
 - `bun2nix -o bun.nix`: Regenerate Nix dependency sources after updating `bun.lock`.
-- `bun pm pack --destination tmp`: Create an actual npm archive for optional local installed-CLI validation after `vp run pack`. Keep it out of commits.
+- `vp pm pack --pack-destination tmp`: Create an actual npm archive for optional local installed-CLI validation after `vp run pack`. Keep it out of commits.
 - `nixfmt flake.nix package.nix`: Format maintained Nix expressions.
 - `nix eval .#packages.aarch64-darwin.default.drvPath`: Optionally evaluate the package derivation without building it. Substitute another supported system as needed.
 - `nix build .#project`: Optionally build the Nix package when explicitly needed, never as a regular CI requirement.

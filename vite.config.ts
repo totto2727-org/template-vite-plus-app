@@ -21,7 +21,7 @@ export default defineConfig({
   run: {
     tasks: {
       build: {
-        command: 'bun build --compile src/main.ts --outfile build/project',
+        command: 'vp exec bun build --compile src/main.ts --outfile build/project',
         cache: {
           input: [{ auto: true }, '!build/**'],
           output: ['build/**'],
@@ -34,7 +34,7 @@ export default defineConfig({
       },
       fix: 'vp check --fix',
       'npm:check': {
-        command: 'bun pm pack --dry-run',
+        command: 'vp pm pack -- --dry-run',
         dependsOn: ['pack'],
       },
       pack: {
