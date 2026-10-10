@@ -20,14 +20,14 @@ Hello, world!
 
 - Prints a greeting without configuration or network access.
 - Runs as a native executable without a separately installed Bun or Node.js runtime.
-- Offers a portable npm CLI powered by Bun.
+- Offers a portable npm CLI powered by Node.js.
 - Provides Nix package and overlay outputs.
 
 ## Prerequisites
 
 - **Platform**: macOS on Apple Silicon, or Linux on ARM64 or x86-64.
 - **Nix installation**: Enable `nix-command` and `flakes`. The native executable needs no separate Bun or Node.js runtime.
-- **Portable CLI**: Install Vite+ to acquire the CLI from the npm registry and Bun on PATH to run it.
+- **Portable CLI**: Install Vite+ to acquire the CLI from the npm registry and Node.js 24 or newer on PATH to run it. Bun is not required.
 
 ## Setup
 

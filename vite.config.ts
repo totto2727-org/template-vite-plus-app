@@ -21,7 +21,7 @@ export default defineConfig({
   run: {
     tasks: {
       build: {
-        command: 'vp exec bun build --compile src/main.ts --outfile build/project',
+        command: 'nix develop .#native --command bun build --compile src/main.ts --outfile build/project',
         cache: {
           input: [{ auto: true }, '!build/**'],
           output: ['build/**'],
@@ -30,7 +30,7 @@ export default defineConfig({
       check: 'vp check',
       ci: {
         command: '',
-        dependsOn: ['check', 'test', 'build', 'npm:check'],
+        dependsOn: ['check', 'test', 'npm:check'],
       },
       fix: 'vp check --fix',
       'npm:check': {

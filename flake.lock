@@ -62,10 +62,6 @@
     },
     "root": {
       "inputs": {
-        "bun2nix": [
-          "vite-plus-overlay",
-          "bun2nix"
-        ],
         "nixpkgs": "nixpkgs",
         "vite-plus-overlay": "vite-plus-overlay"
       }
