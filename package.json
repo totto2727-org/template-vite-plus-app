@@ -2,7 +2,7 @@
   "name": "template-vite-plus-app",
   "version": "0.0.0",
   "private": true,
-  "description": "A simple Bun command-line application with Vite+ tooling",
+  "description": "A simple Node.js command-line application with Vite+ tooling",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -19,21 +19,17 @@
     "access": "public"
   },
   "scripts": {
-    "bin": "vp exec bun run src/main.ts"
+    "bin": "vp exec node src/main.ts"
   },
   "devDependencies": {
     "@tsconfig/node-ts": "^23.6.4",
     "@tsconfig/strictest": "^2.0.8",
     "@types/node": "^24.19.1",
     "typescript": "^7.0.2",
-    "vite-plus": "^1.1.0"
-  },
-  "overrides": {
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.1.0",
-    "vitest": "5.0.3"
+    "vite-plus": "catalog:"
   },
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "bun@1.3.13"
+  "packageManager": "pnpm@11.21.0"
 }

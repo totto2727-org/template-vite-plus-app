@@ -21,4 +21,4 @@ jobs:
       - name: Verify Vite+ project
         run: |
           eval "$(nix print-dev-env "$GITHUB_WORKSPACE#default")"
-          vp run ci
+          vp run --no-cache ci
