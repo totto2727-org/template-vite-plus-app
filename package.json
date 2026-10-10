@@ -19,17 +19,21 @@
     "access": "public"
   },
   "scripts": {
-    "bin": "bun run src/main.ts"
+    "bin": "vp exec bun run src/main.ts"
   },
   "devDependencies": {
-    "@tsconfig/node-ts": "23.6.4",
-    "@tsconfig/strictest": "2.0.8",
-    "@types/node": "24.13.4",
-    "typescript": "7.0.2",
-    "vite-plus": "^1.0.0"
+    "@tsconfig/node-ts": "^23.6.4",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/node": "^24.19.1",
+    "typescript": "^7.0.2",
+    "vite-plus": "^1.1.0"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.1.0",
+    "vitest": "5.0.3"
   },
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@12.4.1"
+  "packageManager": "bun@1.3.13"
 }
