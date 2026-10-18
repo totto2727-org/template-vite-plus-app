@@ -2,6 +2,9 @@
 # in AGENTS.md before renaming this file to flakehub-publish-rolling.yml.
 name: Publish every Git push to main to FlakeHub
 
+# Keep this trigger when creating a project from the template.
+# Change it only for an explicit user request or a demonstrated project requirement.
+# Do not replace main-push publication with tag or release triggers.
 on:
   push:
     branches: [main]
