@@ -48,6 +48,13 @@ package.nix        bun2nix compile package installed as bin/project
 
 ## Architecture
 
+### CI and publication policy
+
+- Keep the inherited CI and publication workflows unchanged by default.
+- Do not replace publication on pushes to `main` with tag or release triggers. Preserve existing tag triggers where already configured.
+- Change workflows only for an explicit user request or a demonstrated project requirement, and explain why the change is necessary.
+- Publication setup does not justify unrelated CI changes.
+
 ### CLI and distribution
 
 - Keep process I/O in `src/main.ts` and greeting behavior in the pure module.

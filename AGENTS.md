@@ -26,6 +26,15 @@
 
 ## Initialization
 
+### CI and publication policy
+
+Keep the template's CI and publication workflows unchanged by default when creating a project.
+In particular, do not replace publication on pushes to `main` with tag or release triggers.
+Preserve existing tag triggers where the template already uses them.
+Change workflows only for an explicit user request or a demonstrated project requirement, and explain why the change is necessary.
+Project metadata replacement and the optional publication setup below are permitted, but do not justify unrelated CI changes.
+Retain this policy in the generated project's `AGENTS.md`.
+
 ### 1. Establish the project
 
 Use the user's repository name, command name, purpose, and license.
