@@ -17,6 +17,10 @@ bun2nix.mkDerivation {
   bunDeps = bun2nix.fetchBunDeps {
     bunNix = ./bun.nix;
   };
+  postBunSetInstallCacheDirPhase = ''
+    # The store cache is read-only, but Bun needs to update its build-local copy.
+    chmod -R u+w "$BUN_INSTALL_CACHE_DIR"
+  '';
   bunInstallFlags = [
     "--frozen-lockfile"
     "--linker=hoisted"
