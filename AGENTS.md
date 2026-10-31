@@ -53,7 +53,7 @@ Keep Node.js 26 or newer for source execution and Node single executable applica
 The separate `pack` task uses `vp pack --filter npm` to generate `dist/main.mjs` for npm with a Node.js shebang. Keep the npm `bin` mapping and `files: ["dist"]` aligned with this output, never with the native `build/` directory.
 Keep `tsconfig.json` extending the exact `@tsconfig/strictest` and `@tsconfig/node-ts` presets in that order, with ESNext targeting and only project-specific options locally.
 Keep both formatting and linting in Vite+, including `semi: false`, single quotes, line width 120, and unwrapped Markdown prose.
-Keep shared `totto2727-org/monorepo` action references on `@main` and the workflow's `eval "$(nix print-dev-env "$GITHUB_WORKSPACE#default")"` environment loading.
+Keep shared `totto2727-org/monorepo` action references on `@main` and the workflow's `eval "$(nix print-dev-env "$GITHUB_WORKSPACE#ci")"` environment loading. The `ci` shell omits the local Git hook setup.
 Do not create `CLAUDE.md`.
 
 ### 3. Maintain dependency locks and Nix packaging
