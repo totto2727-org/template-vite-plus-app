@@ -3,17 +3,15 @@
 
   inputs = {
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
-    vite-plus-overlay = {
-      url = "github:ryoppippi/nix-vite-plus";
+    bun2nix = {
+      url = "github:nix-community/bun2nix/0f2a1f0b6f42cebe3b149bf62d38754c5e0e9729";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    bun2nix.follows = "vite-plus-overlay/bun2nix";
   };
 
   outputs =
     {
       nixpkgs,
-      vite-plus-overlay,
       bun2nix,
       ...
     }:
@@ -34,7 +32,6 @@
         import nixpkgs {
           inherit system;
           overlays = [
-            vite-plus-overlay.overlays.default
             overlay
           ];
         };
@@ -59,12 +56,12 @@
         {
           default = pkgs.mkShell {
             packages = [
-              pkgs.nodejs_24
-              pkgs.bun
-              bun2nix.packages.${system}.default
-              pkgs.vite-plus
               pkgs.nixfmt
             ];
+            shellHook = ''
+              # Enable Git Hook
+              vp config
+            '';
           };
         }
       );
