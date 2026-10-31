@@ -58,8 +58,6 @@
           });
           default = pkgs.mkShell {
             packages = [
-              pkgs.nodejs_26
-              pkgs.pnpm
               pkgs.vite-plus
               pkgs.nixfmt
             ];

@@ -61,7 +61,7 @@ Do not create `CLAUDE.md`.
 Keep `package.nix` and the flake package/overlay outputs as the compiled CLI distribution.
 Use pnpm as the only project package manager, with `pnpm-lock.yaml` for both development and Nix packaging. Do not introduce Bun or npm lockfiles.
 After changing dependencies, run `vp install` inside the Nix shell and update the `pnpmDeps.hash` in `package.nix` from a Nix build's reported fixed-output hash when needed.
-Use `fetchPnpmDeps` with `fetcherVersion = 4` and `pnpmConfigHook` for offline frozen dependency installation. Keep their pnpm version aligned with `packageManager` and the pinned Nix shell.
+Use `fetchPnpmDeps` with `fetcherVersion = 4` and `pnpmConfigHook` for offline frozen dependency installation. Keep their pnpm version aligned with `packageManager`. Declare Node.js and pnpm directly only in `package.nix` for Nix builds, not in development shells.
 Keep `pnpm-workspace.yaml`'s `minimumReleaseAge: 1440` and `minimumReleaseAgeStrict: true`, without release-age exclusions. The interval is 24 hours expressed in minutes.
 The `ryoppippi/nix-vite-plus` input supplies Vite+ tooling and still uses Bun and bun2nix internally. This does not make Bun a project package manager or application runtime.
 The native Nix package embeds the CLI in Node.js, but retains its required Nix runtime closure. Do not describe it as a portable static executable.
