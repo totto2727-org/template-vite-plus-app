@@ -33,18 +33,17 @@ package.nix        fetchPnpmDeps-backed executable package installed as bin/proj
 - `vp run fix`: Apply Vite+ formatting and supported lint fixes with `vp check --fix`.
 - `vp run check`: Check formatting, lint, and TypeScript types through the cached `vp check` task.
 - `vp run test`: Run tests once through the cached `vp test run` task.
-- `vp run build`: Run `vp pack --filter executable` for the current OS and CPU. The named pack configuration enables executable mode with `exe: { fileName: 'project' }` and writes `build/project`.
-- `vp run pack`: Build the portable Node.js-shebang npm launcher with `vp pack --filter npm` into `dist/main.mjs`, separate from the native executable.
-- `vp run npm:check`: Build `pack` first, then inspect npm package contents with `vp pm pack -- --dry-run`.
-- `vp run ci`: Schedule independent checks, tests, native compilation, and portable packaging in parallel. npm verification depends on packaging. Do not execute the application in regular CI.
+- `vp run build`: Run `vp pack` once to generate both the current OS/CPU executable at `build/project` and the portable Node.js-shebang npm launcher at `dist/main.mjs`. The executable configuration uses `exe: { fileName: 'project' }`.
+- `vp run npm:check`: Run `build` first, then inspect npm package contents with `vp pm pack -- --dry-run`.
+- `vp run ci`: Schedule checks, tests, and the combined build in parallel. npm verification depends on the build. Do not execute the application in regular CI.
 - `vp run --verbose --log labeled ci`: Inspect dependency scheduling and cache hit/miss reasons. Put runner flags before the task name.
 - `env -i PATH= "$PWD/build/project"`: Separately validate the compiled executable without Bun or Node.js on PATH after building. Expect `Hello, world!` and exit status 0.
 - `vp install`: Update the sole dependency lock and development installation after manifest changes.
 - After dependency updates, refresh `pnpmDeps.hash` in `package.nix` from the fixed-output hash reported by a Nix build when needed. There is no generated secondary dependency manifest.
-- `vp pm pack --pack-destination tmp`: Create an actual npm archive for optional local installed-CLI validation after `vp run pack`. Keep it out of commits.
+- `vp pm pack --pack-destination tmp`: Create an actual npm archive for optional local installed-CLI validation after `vp run build`. Keep it out of commits.
 - `nixfmt flake.nix package.nix`: Format maintained Nix expressions.
 - `nix eval .#packages.aarch64-darwin.default.drvPath`: Optionally evaluate the package derivation without building it. Substitute another supported system as needed.
-- `nix build .#project`: Optionally build the Nix package when explicitly needed, never as a regular CI requirement.
+- `nix build .#project`: Optionally build the Nix package when explicitly needed, never as a regular CI requirement. `package.nix` calls `vp pack --filter executable` directly to build only the native artifact.
 
 ## Architecture
 
@@ -72,7 +71,7 @@ package.nix        fetchPnpmDeps-backed executable package installed as bin/proj
 - **Dependencies**: Use pnpm as the only project package manager. `pnpm-lock.yaml` supplies both development and Nix packaging. Keep `packageManager` aligned with pnpm used by `package.nix` for Nix builds. Keep `minimumReleaseAge: 1440` and `minimumReleaseAgeStrict: true` in `pnpm-workspace.yaml` for the strict 24-hour release-age policy, without exclusions. Keep Vite+ exactly pinned in the workspace catalog, with its official `vite@*` alias and bundled `vitest@*` overrides in that workspace file. Keep `allowBuilds.vite-plus: false` for prebuilt tools and review every new lifecycle script before allowing it. When updating Vite+, match the alias to the installed `vite-plus` version and the `vitest` override to `vp toolchain vitest`. Do not create npm or Bun lockfiles. Review dependency scripts before allowing them. See [pnpm settings](https://pnpm.io/settings).
 - **Vite+**: The globally pinned `vp` CLI and the local `vite-plus` dependency are independently versioned. Formatting retains no semicolons, single quotes, width 120, and unwrapped Markdown prose.
 - **TypeScript**: Extend the exact `@tsconfig/strictest` and `@tsconfig/node-ts` presets in that order. Inherit strictness, erasable syntax, relative TypeScript import rewriting, and verbatim modules without duplicating or weakening them locally. Only ESNext targeting, NodeNext modules, no-emit, and Node types are local. NodeNext supplies module resolution, and import rewriting permits `.ts` import paths without a separate `allowImportingTsExtensions` override. Use default file discovery without custom `include`, `files`, or `exclude` lists.
-- **Task cache**: All configured tasks use Vite+'s default caching. `ci` is an empty command with dependency edges, not shell orchestration. Native outputs are explicitly archived from `build/**` and excluded from automatic inputs. `pack` archives `dist/**`. Use `vp run --last-details` to inspect replay and invalidation behavior.
+- **Task cache**: All configured tasks use Vite+'s default caching. `ci` is an empty command with dependency edges, not shell orchestration. The combined build archives both `build/**` and `dist/**` and excludes both output directories from automatic inputs. Use `vp run --last-details` to inspect replay and invalidation behavior.
 - **Fix task**: Keep default caching for `vp check --fix`. Vite+ detects read-and-write inputs and declines unsafe cache entries when it changes source files. Reintroducing malformed source must still be corrected.
 - **GitHub Actions**: CI runs shared `setup-nix@main` with `dev-shell: ci` before `setup-typescript@main`. The `ci` shell omits the local Git hook setup. The TypeScript setup uses `vp install --frozen-lockfile` to select pnpm from `packageManager`, then evaluates `eval "$(nix print-dev-env "$GITHUB_WORKSPACE#ci")"` before `vp run ci`. Keep shared org references on `@main`. Do not add a start/smoke task or `nix build` to regular CI.
 

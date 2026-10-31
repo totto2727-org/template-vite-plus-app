@@ -18,7 +18,7 @@ export default defineConfig({
   lint: { options: { typeAware: true, typeCheck: true } },
   test: { include: ['src/**/*.test.ts'] },
   pack: [
-    { name: 'npm', entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
+    { entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
     {
       name: 'executable',
       entry: ['src/main.ts'],
@@ -32,10 +32,10 @@ export default defineConfig({
   run: {
     tasks: {
       build: {
-        command: 'vp pack --filter executable',
+        command: 'vp pack',
         cache: {
-          input: [{ auto: true }, '!build/**'],
-          output: ['build/**'],
+          input: [{ auto: true }, '!build/**', '!dist/**'],
+          output: ['build/**', 'dist/**'],
         },
       },
       check: 'vp check',
@@ -46,11 +46,7 @@ export default defineConfig({
       fix: 'vp check --fix',
       'npm:check': {
         command: 'vp pm pack -- --dry-run',
-        dependsOn: ['pack'],
-      },
-      pack: {
-        command: 'vp pack --filter npm',
-        cache: { output: ['dist/**'] },
+        dependsOn: ['build'],
       },
       test: 'vp test run',
     },

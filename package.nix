@@ -40,7 +40,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   buildPhase = ''
     runHook preBuild
-    node_modules/.bin/vp run build
+    node_modules/.bin/vp pack --filter executable
     runHook postBuild
   '';
   installPhase = ''

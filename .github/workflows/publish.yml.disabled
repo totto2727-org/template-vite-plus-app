@@ -22,10 +22,10 @@ jobs:
           persist-credentials: false
       - uses: totto2727-org/monorepo/.github/actions/setup-nix@main
       - uses: totto2727-org/monorepo/.github/actions/setup-typescript@main
-      - name: Build portable npm artifact
+      - name: Build distribution artifacts
         run: |
           eval "$(nix print-dev-env "$GITHUB_WORKSPACE#default")"
-          vp run pack
+          vp run build
       - uses: totto2727-org/monorepo/.github/actions/publish-npm@main
         with:
           working-directory: .

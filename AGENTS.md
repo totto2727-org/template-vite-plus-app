@@ -47,10 +47,10 @@ Review `.envrc` before optionally running `direnv allow`.
 Update the identity and repository URL in `package.json`, the flake description, and the license holder.
 Replace `project` in `package.json`'s `bin` mapping, `vite.config.ts`, `package.nix`, the package/overlay attributes in `flake.nix`, and documentation with the desired executable name.
 Replace the source and tests with the project's behavior.
-Retain the `bin` script using `vp exec node src/main.ts` for development execution and `vp pack --filter executable` for the native `build` task, adjusting the entrypoint and command name if needed.
-The executable pack configuration uses `exe: { fileName: 'project' }` with `outDir: 'build'`, which enables Vite+'s executable mode without also building the npm configuration.
+Retain the `bin` script using `vp exec node src/main.ts` for development execution and `vp pack` for the `build` task, generating both distribution artifacts together and adjusting the entrypoint and command name if needed.
+The executable pack configuration uses `exe: { fileName: 'project' }` with `outDir: 'build'`, alongside the npm configuration in the same `vp pack` invocation.
 Keep Node.js 26 or newer for source execution and Node single executable application packaging, with `.node-version` aligned with the pinned Nix shell.
-The separate `pack` task uses `vp pack --filter npm` to generate `dist/main.mjs` for npm with a Node.js shebang. Keep the npm `bin` mapping and `files: ["dist"]` aligned with this output, never with the native `build/` directory.
+The same `build` task generates `dist/main.mjs` for npm with a Node.js shebang. Keep the npm `bin` mapping and `files: ["dist"]` aligned with this output, never with the native `build/` directory.
 Keep `tsconfig.json` extending the exact `@tsconfig/strictest` and `@tsconfig/node-ts` presets in that order, with ESNext targeting and only project-specific options locally.
 Keep both formatting and linting in Vite+, including `semi: false`, single quotes, line width 120, and unwrapped Markdown prose.
 Keep shared `totto2727-org/monorepo` action references on `@main` and the workflow's `eval "$(nix print-dev-env "$GITHUB_WORKSPACE#ci")"` environment loading. The `ci` shell omits the local Git hook setup.
@@ -88,7 +88,7 @@ Confirm ownership and configure the npm package's Trusted Publisher for the exac
 Keep job-scoped `id-token: write` permissions and shared `setup-nix@main`, `setup-typescript@main`, and `publish-npm@main`, with `working-directory: .`. Do not add registry tokens.
 Review the shared actions, protect release tags, remove `private: true` only when ready, and rename the disabled workflow to `publish.yml` only after trust is configured.
 Validate `vp run npm:check`, inspect an actual `vp pm pack --pack-destination tmp` archive, and verify its installed Node.js CLI before publishing. The tarball must contain `dist/` and package metadata, never `build/`, source files, or temporary artifacts.
-The release workflow builds only the portable npm artifact and publishes through the shared action on a `v<version>` tag matching `package.json`. Native Nix packaging remains independent.
+The release workflow builds both artifacts and publishes only the npm artifact through the shared action on a `v<version>` tag matching `package.json`. Native Nix packaging remains independent.
 See [npm trusted publishing](https://docs.npmjs.com/trusted-publishers/) for registry setup requirements.
 
 Keep `.github/workflows/flakehub-publish-rolling.yml.disabled` disabled unless FlakeHub publication is explicitly wanted.
@@ -100,8 +100,8 @@ FlakeHub and npm publication are independent choices.
 ### 6. Validate and hand off
 
 Run `vp run fix` and `vp run ci`.
-The aggregate task schedules independent checks, tests, native compilation, and portable packaging in parallel through Vite+ dependencies. The npm dry run depends on `pack`. CI does not execute the application or a smoke command.
-Keep default task caching, including `fix`. Native output is declared with `cache: { output: ['build/**'] }` and excluded from automatic build input tracking. Verify cached output restoration and source/configuration invalidation when changing task definitions.
+The aggregate task schedules checks, tests, and the combined native/npm build in parallel through Vite+ dependencies. The npm dry run depends on `build`. CI does not execute the application or a smoke command.
+Keep default task caching, including `fix`. Both outputs are declared with `cache: { output: ['build/**', 'dist/**'] }` and excluded from automatic build input tracking. Verify cached output restoration and source/configuration invalidation when changing task definitions.
 Separately run the compiled executable with Bun and Node absent from PATH and verify its expected output, as described in the customized developer document.
 Nix package builds are neither required initialization validation nor part of normal CI.
 Review the final documents for obsolete paths and placeholders, exclude temporary files under `tmp/`, and commit the initialized project.
