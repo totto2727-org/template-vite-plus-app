@@ -17,11 +17,22 @@ export default defineConfig({
   },
   lint: { options: { typeAware: true, typeCheck: true } },
   test: { include: ['src/**/*.test.ts'] },
-  pack: { entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
+  pack: [
+    { name: 'npm', entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
+    {
+      name: 'executable',
+      entry: ['src/main.ts'],
+      format: ['esm'],
+      platform: 'node',
+      outDir: 'build',
+      clean: true,
+      exe: { fileName: 'project' },
+    },
+  ],
   run: {
     tasks: {
       build: {
-        command: 'vp exec bun build --compile src/main.ts --outfile build/project',
+        command: 'vp pack --filter executable',
         cache: {
           input: [{ auto: true }, '!build/**'],
           output: ['build/**'],
@@ -38,7 +49,7 @@ export default defineConfig({
         dependsOn: ['pack'],
       },
       pack: {
-        command: 'vp pack',
+        command: 'vp pack --filter npm',
         cache: { output: ['dist/**'] },
       },
       test: 'vp test run',
