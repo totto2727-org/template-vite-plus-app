@@ -18,7 +18,7 @@ export default defineConfig({
   lint: { options: { typeAware: true, typeCheck: true } },
   test: { include: ['src/**/*.test.ts'] },
   pack: [
-    { entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
+    { name: 'npm', entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
     {
       name: 'executable',
       entry: ['src/main.ts'],

@@ -88,7 +88,7 @@ Confirm ownership and configure the npm package's Trusted Publisher for the exac
 Keep job-scoped `id-token: write` permissions and shared `setup-nix@main`, `setup-typescript@main`, and `publish-npm@main`, with `working-directory: .`. Do not add registry tokens.
 Review the shared actions, protect release tags, remove `private: true` only when ready, and rename the disabled workflow to `publish.yml` only after trust is configured.
 Validate `vp run npm:check`, inspect an actual `vp pm pack --pack-destination tmp` archive, and verify its installed Node.js CLI before publishing. The tarball must contain `dist/` and package metadata, never `build/`, source files, or temporary artifacts.
-The release workflow builds both artifacts and publishes only the npm artifact through the shared action on a `v<version>` tag matching `package.json`. Native Nix packaging remains independent.
+The release workflow runs `vp pack --filter npm` to build only the npm artifact and publishes through the shared action on a `v<version>` tag matching `package.json`. Native Nix packaging remains independent.
 See [npm trusted publishing](https://docs.npmjs.com/trusted-publishers/) for registry setup requirements.
 
 Keep `.github/workflows/flakehub-publish-rolling.yml.disabled` disabled unless FlakeHub publication is explicitly wanted.
