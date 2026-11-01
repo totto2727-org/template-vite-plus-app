@@ -1,10 +1,10 @@
 {
-  description = "A simple Bun CLI template with Vite+ tooling";
+  description = "A Node.js CLI template with Vite+ executable packaging";
 
   inputs = {
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
-    bun2nix = {
-      url = "github:nix-community/bun2nix/0f2a1f0b6f42cebe3b149bf62d38754c5e0e9729";
+    vite-plus = {
+      url = "github:ryoppippi/nix-vite-plus";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -12,7 +12,7 @@
   outputs =
     {
       nixpkgs,
-      bun2nix,
+      vite-plus,
       ...
     }:
     let
@@ -23,17 +23,16 @@
       ];
       forEachSystem = nixpkgs.lib.genAttrs supportedSystems;
       overlay = final: _previous: {
-        project = final.callPackage ./package.nix {
-          bun2nix = bun2nix.packages.${final.stdenv.hostPlatform.system}.default;
+        vite-plus = vite-plus.packages.${final.stdenv.hostPlatform.system}.vp.override {
+          nodejs = final.nodejs_26;
         };
+        project = final.callPackage ./package.nix { };
       };
       mkPkgs =
         system:
         import nixpkgs {
           inherit system;
-          overlays = [
-            overlay
-          ];
+          overlays = [ overlay ];
         };
     in
     {
@@ -59,6 +58,7 @@
           });
           default = pkgs.mkShell {
             packages = [
+              pkgs.vite-plus
               pkgs.nixfmt
             ];
             shellHook = ''

@@ -25,7 +25,7 @@ jobs:
       - name: Build portable npm artifact
         run: |
           eval "$(nix print-dev-env "$GITHUB_WORKSPACE#default")"
-          vp run pack
+          vp pack --filter npm
       - uses: totto2727-org/monorepo/.github/actions/publish-npm@main
         with:
           working-directory: .

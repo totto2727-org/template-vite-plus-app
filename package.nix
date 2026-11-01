@@ -1,46 +1,71 @@
-{ lib, bun2nix }:
-bun2nix.mkDerivation {
+{
+  lib,
+  stdenv,
+  nodejs_26,
+  pnpm,
+  pnpmConfigHook,
+  fetchPnpmDeps,
+  vite-plus,
+  darwin,
+}:
+stdenv.mkDerivation (finalAttrs: {
   pname = "project";
-  packageJson = ./package.json;
+  version = (lib.importJSON ./package.json).version;
   src = lib.fileset.toSource {
     root = ./.;
     fileset = lib.fileset.unions [
       ./src
       ./package.json
-      ./bunfig.toml
-      ./bun.lock
+      ./pnpm-lock.yaml
+      ./pnpm-workspace.yaml
+      ./.node-version
       ./tsconfig.json
+      ./vite.config.ts
     ];
   };
-  module = "src/main.ts";
 
-  bunDeps = bun2nix.fetchBunDeps {
-    bunNix = ./bun.nix;
+  pnpmDeps = fetchPnpmDeps {
+    inherit (finalAttrs) pname version src;
+    inherit pnpm;
+    fetcherVersion = 4;
+    hash = "sha256-gKDdjUegVNmHBDs8eGxq+oN5pRZK6XsLp6MnCSEvGzE=";
   };
-  postBunSetInstallCacheDirPhase = ''
-    # The store cache is read-only, but Bun needs to update its build-local copy.
-    chmod -R u+w "$BUN_INSTALL_CACHE_DIR"
+  nativeBuildInputs = [
+    nodejs_26
+    pnpm
+    pnpmConfigHook
+    vite-plus
+  ]
+  ++ lib.optionals stdenv.hostPlatform.isDarwin [ darwin.sigtool ];
+
+  buildPhase = ''
+    runHook preBuild
+    node_modules/.bin/vp pack --filter executable
+    runHook postBuild
   '';
-  bunInstallFlags = [
-    "--frozen-lockfile"
-    "--linker=hoisted"
-    "--backend=copyfile"
-  ];
-  dontRunLifecycleScripts = true;
-  # Match the local standalone build and preserve ESM semantics.
-  bunCompileToBytecode = false;
-  removeBunBuildFlags = [
-    "--minify"
-    "--sourcemap"
-  ];
+  installPhase = ''
+    runHook preInstall
+    install -Dm755 build/project $out/bin/project
+    runHook postInstall
+  '';
+
+  # Rewriting or stripping the SEA binary can damage its embedded program/signature.
+  dontFixup = true;
+  doInstallCheck = true;
+  installCheckPhase = ''
+    runHook preInstallCheck
+    test "$(env -i PATH= $out/bin/project)" = "Hello, world!"
+    runHook postInstallCheck
+  '';
 
   meta = {
-    description = "A simple Bun command-line application";
+    description = "A standalone Node.js command-line application";
     license = lib.licenses.mit;
+    mainProgram = "project";
     platforms = [
       "aarch64-darwin"
       "aarch64-linux"
       "x86_64-linux"
     ];
   };
-}
+})
