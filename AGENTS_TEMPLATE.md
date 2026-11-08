@@ -21,6 +21,7 @@ package.nix        fetchPnpmDeps-backed executable package installed as bin/proj
 
 - Run commands from the repository root inside `nix develop`.
 - Use Vite+ for both formatting and linting, as well as type checking and tests.
+- Keep formatter and linter exclusions synchronized with `.gitignore` through `@totto2727/gitignore-patterns` in `vite.config.ts` instead of adding duplicate ignore lists.
 - Use Node.js 26 or newer for source execution and Vite+ executable packaging. Use pnpm as the sole project package manager.
 - Keep Nix package build validation separate from source tasks and regular CI.
 - Keep `AGENTS.md` canonical and do not create `CLAUDE.md`.
