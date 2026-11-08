@@ -18,6 +18,7 @@ stdenv.mkDerivation (finalAttrs: {
       ./package.json
       ./pnpm-lock.yaml
       ./pnpm-workspace.yaml
+      ./.gitignore
       ./.node-version
       ./tsconfig.json
       ./vite.config.ts
@@ -28,7 +29,7 @@ stdenv.mkDerivation (finalAttrs: {
     inherit (finalAttrs) pname version src;
     inherit pnpm;
     fetcherVersion = 4;
-    hash = "sha256-gKDdjUegVNmHBDs8eGxq+oN5pRZK6XsLp6MnCSEvGzE=";
+    hash = "sha256-ynptE85wBxsmraJBWvOkar2xKN91lzIPSZrBmGftm2I=";
   };
   nativeBuildInputs = [
     nodejs_26

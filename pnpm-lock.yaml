@@ -18,6 +18,9 @@ importers:
 
   .:
     devDependencies:
+      '@totto2727/gitignore-patterns':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@tsconfig/node-ts':
         specifier: ^23.6.4
         version: 23.6.4
@@ -358,6 +361,9 @@ packages:
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
+
+  '@totto2727/gitignore-patterns@0.1.0':
+    resolution: {integrity: sha512-hg8SkhlD4pDixWp3EDcsTTXkXM2KKR7H5Xl+ypqC0tced1Z7n3OG+rgBXkemOsgvYBP+TykpKztPyOrAi7ogRA==}
 
   '@tsconfig/node-ts@23.6.4':
     resolution: {integrity: sha512-37BMJvNQZ+vTgd1xG2TGBkJ6ENeT4eO4Wh2CHrnn0IwH7ybLFCzh4Uc//kc7UIvqiRac4uGdIc1meKOjMSlKzw==}
@@ -881,6 +887,10 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  ignore@7.0.14:
+    resolution: {integrity: sha512-wCBiZ77u1tuWde6G/nfOtLaCTYcFDU5yCzARzK10y+rLhzYoL7a7yEemcopcc2Mzow7gZOIjnV2ym1NYmdiJOQ==}
+    engines: {node: '>= 4'}
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -1337,6 +1347,10 @@ snapshots:
     dependencies:
       '@testing-library/dom': 10.4.2
 
+  '@totto2727/gitignore-patterns@0.1.0':
+    dependencies:
+      ignore: 7.0.14
+
   '@tsconfig/node-ts@23.6.4': {}
 
   '@tsconfig/strictest@2.0.8': {}
@@ -1641,6 +1655,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  ignore@7.0.14: {}
 
   js-tokens@4.0.0: {}
 
