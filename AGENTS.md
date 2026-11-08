@@ -67,7 +67,7 @@ Keep `pnpm-workspace.yaml`'s `minimumReleaseAge: 1440` and `minimumReleaseAgeStr
 The `ryoppippi/nix-vite-plus` input supplies Vite+ tooling and still uses Bun and bun2nix internally. This does not make Bun a project package manager or application runtime.
 The native Nix package embeds the CLI in Node.js, but retains its required Nix runtime closure. Do not describe it as a portable static executable.
 Keep Vite+ exactly pinned through the `vite-plus` catalog entry and retain the official `vite@*` alias and bundled `vitest@*` overrides in `pnpm-workspace.yaml`, as specified by the installed Vite+ README.
-Keep `allowBuilds.vite-plus: false` because the tools are prebuilt, and review every new lifecycle script before allowing it.
+Review every new dependency lifecycle script before allowing it.
 When updating Vite+, match the `vite` alias to the installed `vite-plus` version and the `vitest` override to `vp toolchain vitest`.
 Update `flake.lock` only when changing Nix inputs or intentionally updating pins.
 Review any dependency lifecycle scripts before explicitly allowing them in `package.nix`.
