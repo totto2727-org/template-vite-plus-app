@@ -12,7 +12,3 @@ overrides:
 
 minimumReleaseAge: 1440
 minimumReleaseAgeStrict: true
-
-# Vite+ distributes prebuilt tools. Do not grant dependency lifecycle execution.
-allowBuilds:
-  vite-plus: false
