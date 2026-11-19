@@ -20,7 +20,7 @@ export default defineConfig({
     singleQuote: true,
   },
   lint: { ignorePatterns, options: { typeAware: true, typeCheck: true } },
-  test: { include: ['src/**/*.test.ts'] },
+  test: { dir: 'src' },
   pack: [
     { name: 'npm', entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
     {
