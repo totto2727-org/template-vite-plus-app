@@ -19,7 +19,18 @@ export default defineConfig({
     semi: false,
     singleQuote: true,
   },
-  lint: { ignorePatterns, options: { typeAware: true, typeCheck: true } },
+  lint: {
+    ignorePatterns,
+    jsPlugins: ['@totto2727/oxlint'],
+    options: { typeAware: true, typeCheck: true },
+    rules: {
+      'rules/no-eslint-disable-comments': 'error',
+      'rules/no-local-export-list': 'error',
+      'rules/no-redundant-alias': 'error',
+      'rules/require-disable-reason': 'error',
+      'rules/require-import-extension': 'error',
+    },
+  },
   test: { dir: 'src' },
   pack: [
     { name: 'npm', entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
