@@ -29,7 +29,7 @@ stdenv.mkDerivation (finalAttrs: {
     inherit (finalAttrs) pname version src;
     inherit pnpm;
     fetcherVersion = 4;
-    hash = "sha256-ynptE85wBxsmraJBWvOkar2xKN91lzIPSZrBmGftm2I=";
+    hash = "sha256-rQWDpzMZ31PRIgNt97BeFKMgIK4EMJlNszWbegZUpYw=";
   };
   nativeBuildInputs = [
     nodejs_26
