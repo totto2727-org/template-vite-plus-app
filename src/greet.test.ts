@@ -2,7 +2,7 @@ import { describe, expect, test } from 'vite-plus/test'
 
 import { greet } from './greet.ts'
 
-describe(greet, () => {
+describe('greetings', () => {
   test('greets the world when no name is supplied', () => {
     expect(greet()).toBe('Hello, world!')
   })
