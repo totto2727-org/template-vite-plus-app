@@ -1,3 +1,1 @@
-export function greet(name: string = 'world'): string {
-  return `Hello, ${name}!`
-}
+export const greet = (name = 'world'): string => `Hello, ${name}!`

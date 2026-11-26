@@ -1,11 +1,15 @@
+// oxlint-disable-next-line rules/no-node-imports -- Vite+ loads this configuration in Node.js.
+import { URL } from 'node:url'
+
 import { generateIgnorePatterns } from '@totto2727/gitignore-patterns'
+import applicationPreset from '@totto2727/oxlint/preset/application'
 import { defineConfig } from 'vite-plus'
 
 const ignorePatterns = await generateIgnorePatterns(new URL('.', import.meta.url))
 
+// oxlint-disable-next-line import/no-default-export -- Vite+ loads the module default.
 export default defineConfig({
   fmt: {
-    ignorePatterns,
     arrowParens: 'always',
     experimentalSortImports: {
       ignoreCase: true,
@@ -13,6 +17,7 @@ export default defineConfig({
       order: 'asc',
     },
     experimentalSortPackageJson: true,
+    ignorePatterns,
     jsxSingleQuote: true,
     printWidth: 120,
     proseWrap: 'preserve',
@@ -20,38 +25,30 @@ export default defineConfig({
     singleQuote: true,
   },
   lint: {
+    ...applicationPreset,
     ignorePatterns,
-    jsPlugins: ['@totto2727/oxlint'],
-    options: { typeAware: true, typeCheck: true },
-    rules: {
-      'rules/no-eslint-disable-comments': 'error',
-      'rules/no-local-export-list': 'error',
-      'rules/no-redundant-alias': 'error',
-      'rules/require-disable-reason': 'error',
-      'rules/require-import-extension': 'error',
-    },
+    options: { ...applicationPreset.options, typeCheck: true },
   },
-  test: { dir: 'src' },
   pack: [
-    { name: 'npm', entry: ['src/main.ts'], format: ['esm'], platform: 'node', clean: true },
+    { clean: true, entry: ['src/main.ts'], format: ['esm'], name: 'npm', platform: 'node' },
     {
-      name: 'executable',
-      entry: ['src/main.ts'],
-      format: ['esm'],
-      platform: 'node',
-      outDir: 'build',
       clean: true,
+      entry: ['src/main.ts'],
       exe: { fileName: 'project' },
+      format: ['esm'],
+      name: 'executable',
+      outDir: 'build',
+      platform: 'node',
     },
   ],
   run: {
     tasks: {
       build: {
-        command: 'vp pack',
         cache: {
           input: [{ auto: true }, '!build/**', '!dist/**'],
           output: ['build/**', 'dist/**'],
         },
+        command: 'vp pack',
       },
       check: 'vp check',
       ci: {
@@ -66,4 +63,5 @@ export default defineConfig({
       test: 'vp test run',
     },
   },
+  test: { dir: 'src' },
 })
